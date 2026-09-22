@@ -121,6 +121,8 @@ $jobs = @(
   }
 )
 
+$changed = @()
+
 # Public lock: SalesSwipe not SwipeSales — only in display/title/ProductName contexts
 $swipeFixRoots = @(
   (Join-Path $circuit 'BlackLabelRealEstate-windows'),
@@ -143,7 +145,6 @@ foreach ($r in $swipeFixRoots) {
   }
 }
 
-$changed = @()
 foreach ($job in $jobs) {
   foreach ($r in ($job.Roots | Select-Object -Unique)) {
     if (-not (Test-Path $r)) { Log "skip missing root $r"; continue }
