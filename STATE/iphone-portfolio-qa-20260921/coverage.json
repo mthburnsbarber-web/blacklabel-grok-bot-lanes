@@ -1,0 +1,996 @@
+{
+  "status": "IN_PROGRESS",
+  "required_features": [
+    {
+      "id": "ACADEMY-001",
+      "app": "Black Label Academy",
+      "bundle_id": "com.blacklabel.academy",
+      "public_version": "1.3.0",
+      "source_url": "https://apps.apple.com/us/app/black-label-academy/id6783512097?uo=4",
+      "claim": "332 embedded lessons",
+      "status": "NOT_TESTED",
+      "evidence": []
+    },
+    {
+      "id": "ACADEMY-002",
+      "app": "Black Label Academy",
+      "bundle_id": "com.blacklabel.academy",
+      "public_version": "1.3.0",
+      "source_url": "https://apps.apple.com/us/app/black-label-academy/id6783512097?uo=4",
+      "claim": "1223 primary-source links",
+      "status": "NOT_TESTED",
+      "evidence": []
+    },
+    {
+      "id": "ACADEMY-003",
+      "app": "Black Label Academy",
+      "bundle_id": "com.blacklabel.academy",
+      "public_version": "1.3.0",
+      "source_url": "https://apps.apple.com/us/app/black-label-academy/id6783512097?uo=4",
+      "claim": "seven curriculum pillars",
+      "status": "PASS",
+      "evidence": [
+        "phone-cycle-06.log",
+        "cycle-06-summary.json"
+      ],
+      "device_build": "1.3.3 (36) developer",
+      "note": "testAcademyPublicPillarsAndSearch passed cycle-06 (pillars present)",
+      "updated": "2026-09-21T21:55:00-05:00"
+    },
+    {
+      "id": "ACADEMY-004",
+      "app": "Black Label Academy",
+      "bundle_id": "com.blacklabel.academy",
+      "public_version": "1.3.0",
+      "source_url": "https://apps.apple.com/us/app/black-label-academy/id6783512097?uo=4",
+      "claim": "AI Operator 12-lesson track",
+      "status": "FAIL",
+      "evidence": [
+        "phone-cycle-06.log",
+        "cycle-06-summary.json"
+      ],
+      "device_build": "1.3.3 (36) developer",
+      "note": "AI Operator track \u2014 testAcademyPublicGuidedTracks failed cycle-06",
+      "updated": "2026-09-21T21:55:00-05:00"
+    },
+    {
+      "id": "ACADEMY-005",
+      "app": "Black Label Academy",
+      "bundle_id": "com.blacklabel.academy",
+      "public_version": "1.3.0",
+      "source_url": "https://apps.apple.com/us/app/black-label-academy/id6783512097?uo=4",
+      "claim": "Mistake-Proof Operations 12-lesson track",
+      "status": "FAIL",
+      "evidence": [
+        "phone-cycle-06.log",
+        "cycle-06-summary.json"
+      ],
+      "device_build": "1.3.3 (36) developer",
+      "note": "Mistake-Proof Operations \u2014 testAcademyPublicGuidedTracks failed cycle-06",
+      "updated": "2026-09-21T21:55:00-05:00"
+    },
+    {
+      "id": "ACADEMY-006",
+      "app": "Black Label Academy",
+      "bundle_id": "com.blacklabel.academy",
+      "public_version": "1.3.0",
+      "source_url": "https://apps.apple.com/us/app/black-label-academy/id6783512097?uo=4",
+      "claim": "Owner Money 12-lesson track",
+      "status": "FAIL",
+      "evidence": [
+        "phone-cycle-06.log",
+        "cycle-06-summary.json"
+      ],
+      "device_build": "1.3.3 (36) developer",
+      "note": "Owner Money \u2014 testAcademyPublicGuidedTracks failed cycle-06",
+      "updated": "2026-09-21T21:55:00-05:00"
+    },
+    {
+      "id": "ACADEMY-007",
+      "app": "Black Label Academy",
+      "bundle_id": "com.blacklabel.academy",
+      "public_version": "1.3.0",
+      "source_url": "https://apps.apple.com/us/app/black-label-academy/id6783512097?uo=4",
+      "claim": "grounded on-device Tutor with citations and access filtering",
+      "status": "FAIL",
+      "evidence": [
+        "phone-cycle-06.log",
+        "cycle-06-summary.json"
+      ],
+      "device_build": "1.3.3 (36) developer",
+      "note": "testAcademyPublicTutor failed cycle-06",
+      "updated": "2026-09-21T21:55:00-05:00"
+    },
+    {
+      "id": "ACADEMY-008",
+      "app": "Black Label Academy",
+      "bundle_id": "com.blacklabel.academy",
+      "public_version": "1.3.0",
+      "source_url": "https://apps.apple.com/us/app/black-label-academy/id6783512097?uo=4",
+      "claim": "exact three-lesson free sample",
+      "status": "FAIL",
+      "evidence": [
+        "phone-cycle-06.log",
+        "cycle-06-summary.json"
+      ],
+      "device_build": "1.3.3 (36) developer",
+      "note": "testAcademyPublicFreeSampleAndPaywall failed: Public free sample mismatch: Owner \u00b7 full library (developer/owner install, not public free-sample surface)",
+      "updated": "2026-09-21T21:55:00-05:00"
+    },
+    {
+      "id": "ACADEMY-009",
+      "app": "Black Label Academy",
+      "bundle_id": "com.blacklabel.academy",
+      "public_version": "1.3.0",
+      "source_url": "https://apps.apple.com/us/app/black-label-academy/id6783512097?uo=4",
+      "claim": "lesson notes persistence",
+      "status": "NOT_TESTED",
+      "evidence": []
+    },
+    {
+      "id": "ACADEMY-010",
+      "app": "Black Label Academy",
+      "bundle_id": "com.blacklabel.academy",
+      "public_version": "1.3.0",
+      "source_url": "https://apps.apple.com/us/app/black-label-academy/id6783512097?uo=4",
+      "claim": "bookmarks persistence",
+      "status": "NOT_TESTED",
+      "evidence": []
+    },
+    {
+      "id": "ACADEMY-011",
+      "app": "Black Label Academy",
+      "bundle_id": "com.blacklabel.academy",
+      "public_version": "1.3.0",
+      "source_url": "https://apps.apple.com/us/app/black-label-academy/id6783512097?uo=4",
+      "claim": "search restricted to accessible content",
+      "status": "PASS",
+      "evidence": [
+        "phone-cycle-06.log",
+        "cycle-06-summary.json"
+      ],
+      "device_build": "1.3.3 (36) developer",
+      "note": "testAcademyPublicPillarsAndSearch passed cycle-06 (search exercised)",
+      "updated": "2026-09-21T21:55:00-05:00"
+    },
+    {
+      "id": "ACADEMY-012",
+      "app": "Black Label Academy",
+      "bundle_id": "com.blacklabel.academy",
+      "public_version": "1.3.0",
+      "source_url": "https://apps.apple.com/us/app/black-label-academy/id6783512097?uo=4",
+      "claim": "review cards restricted to accessible content",
+      "status": "FAIL",
+      "evidence": [
+        "phone-cycle-06.log",
+        "cycle-06-summary.json"
+      ],
+      "device_build": "1.3.3 (36) developer",
+      "note": "testAcademyPublicReviewAndCertificatePreview failed cycle-06",
+      "updated": "2026-09-21T21:55:00-05:00"
+    },
+    {
+      "id": "ACADEMY-013",
+      "app": "Black Label Academy",
+      "bundle_id": "com.blacklabel.academy",
+      "public_version": "1.3.0",
+      "source_url": "https://apps.apple.com/us/app/black-label-academy/id6783512097?uo=4",
+      "claim": "calculators",
+      "status": "FAIL",
+      "evidence": [
+        "phone-cycle-06.log",
+        "cycle-06-summary.json"
+      ],
+      "device_build": "1.3.3 (36) developer",
+      "note": "testAcademyPublicAllCalculators failed cycle-06 (snapshot identifiers missing on Owner calculators)",
+      "updated": "2026-09-21T21:55:00-05:00"
+    },
+    {
+      "id": "ACADEMY-014",
+      "app": "Black Label Academy",
+      "bundle_id": "com.blacklabel.academy",
+      "public_version": "1.3.0",
+      "source_url": "https://apps.apple.com/us/app/black-label-academy/id6783512097?uo=4",
+      "claim": "StoreKit subscription price and no trial",
+      "status": "NOT_TESTED",
+      "evidence": []
+    },
+    {
+      "id": "ACADEMY-015",
+      "app": "Black Label Academy",
+      "bundle_id": "com.blacklabel.academy",
+      "public_version": "1.3.0",
+      "source_url": "https://apps.apple.com/us/app/black-label-academy/id6783512097?uo=4",
+      "claim": "subscription unlocks 329 remaining lessons",
+      "status": "NOT_TESTED",
+      "evidence": []
+    },
+    {
+      "id": "ACADEMY-016",
+      "app": "Black Label Academy",
+      "bundle_id": "com.blacklabel.academy",
+      "public_version": "1.3.0",
+      "source_url": "https://apps.apple.com/us/app/black-label-academy/id6783512097?uo=4",
+      "claim": "Restore Purchases",
+      "status": "BLOCKED",
+      "evidence": [
+        "cycle-06-summary.json"
+      ],
+      "device_build": "1.3.3 (36) developer",
+      "note": "No dedicated Academy Restore Purchases pass in cycle-06; public StoreKit restore not proven on device",
+      "updated": "2026-09-21T21:55:00-05:00"
+    },
+    {
+      "id": "ACADEMY-017",
+      "app": "Black Label Academy",
+      "bundle_id": "com.blacklabel.academy",
+      "public_version": "1.3.0",
+      "source_url": "https://apps.apple.com/us/app/black-label-academy/id6783512097?uo=4",
+      "claim": "Manage Subscription",
+      "status": "NOT_TESTED",
+      "evidence": []
+    },
+    {
+      "id": "ACADEMY-018",
+      "app": "Black Label Academy",
+      "bundle_id": "com.blacklabel.academy",
+      "public_version": "1.3.0",
+      "source_url": "https://apps.apple.com/us/app/black-label-academy/id6783512097?uo=4",
+      "claim": "offline curriculum without download or account",
+      "status": "NOT_TESTED",
+      "evidence": []
+    },
+    {
+      "id": "ACADEMY-019",
+      "app": "Black Label Academy",
+      "bundle_id": "com.blacklabel.academy",
+      "public_version": "1.3.0",
+      "source_url": "https://apps.apple.com/us/app/black-label-academy/id6783512097?uo=4",
+      "claim": "home scroll down and back",
+      "status": "PASS",
+      "evidence": [
+        "phone-cycle-06.log",
+        "cycle-06-summary.json"
+      ],
+      "device_build": "1.3.3 (36) developer",
+      "note": "testAcademyScrollBaseline passed cycle-06 on installed Academy",
+      "updated": "2026-09-21T21:55:00-05:00"
+    },
+    {
+      "id": "ACADEMY-020",
+      "app": "Black Label Academy",
+      "bundle_id": "com.blacklabel.academy",
+      "public_version": "1.3.0",
+      "source_url": "https://apps.apple.com/us/app/black-label-academy/id6783512097?uo=4",
+      "claim": "pillar list scroll down and back",
+      "status": "NOT_TESTED",
+      "evidence": []
+    },
+    {
+      "id": "ACADEMY-021",
+      "app": "Black Label Academy",
+      "bundle_id": "com.blacklabel.academy",
+      "public_version": "1.3.0",
+      "source_url": "https://apps.apple.com/us/app/black-label-academy/id6783512097?uo=4",
+      "claim": "lesson reader long-document scroll to bottom and back",
+      "status": "PASS",
+      "evidence": [
+        "phone-cycle-06.log",
+        "cycle-06-summary.json"
+      ],
+      "device_build": "1.3.3 (36) developer",
+      "note": "testAcademyToolsAndReader passed cycle-06 (reader scroll)",
+      "updated": "2026-09-21T21:55:00-05:00"
+    },
+    {
+      "id": "ACADEMY-022",
+      "app": "Black Label Academy",
+      "bundle_id": "com.blacklabel.academy",
+      "public_version": "1.3.0",
+      "source_url": "https://apps.apple.com/us/app/black-label-academy/id6783512097?uo=4",
+      "claim": "sheet scroll and dismissal",
+      "status": "PASS",
+      "evidence": [
+        "sheet-bounds-build36.log",
+        "sheet-fix-cycle07.md",
+        "academy-build36-install.json"
+      ],
+      "device_build": "1.3.3 (36) developer",
+      "note": "testAcademySheetBounds PASSED on developer 1.3.3 (36) including Certificates; public App Store still 1.3.0 (26) \u2014 not promoted",
+      "updated": "2026-09-21T21:55:00-05:00"
+    },
+    {
+      "id": "ACADEMY-023",
+      "app": "Black Label Academy",
+      "bundle_id": "com.blacklabel.academy",
+      "public_version": "1.3.0",
+      "source_url": "https://apps.apple.com/us/app/black-label-academy/id6783512097?uo=4",
+      "claim": "keyboard dismissal and back navigation",
+      "status": "NOT_TESTED",
+      "evidence": []
+    },
+    {
+      "id": "REALESTATE-001",
+      "app": "Black Label Real Estate CRM",
+      "bundle_id": "com.blacklabel.realestate",
+      "public_version": "1.3",
+      "source_url": "https://apps.apple.com/us/app/black-label-real-estate-crm/id6781964407?uo=4",
+      "claim": "one fictional read-only Oak Hollow decision dossier",
+      "status": "FAIL",
+      "evidence": [
+        "phone-cycle-06.log",
+        "cycle-06-summary.json"
+      ],
+      "note": "testRealEstatePublicSampleScroll failed cycle-06 \u2014 public sample scroll/claims not proven on device",
+      "updated": "2026-09-21T21:55:00-05:00"
+    },
+    {
+      "id": "REALESTATE-002",
+      "app": "Black Label Real Estate CRM",
+      "bundle_id": "com.blacklabel.realestate",
+      "public_version": "1.3",
+      "source_url": "https://apps.apple.com/us/app/black-label-real-estate-crm/id6781964407?uo=4",
+      "claim": "sample zero live parcel/owner/comparable/contact/route records",
+      "status": "FAIL",
+      "evidence": [
+        "phone-cycle-06.log",
+        "cycle-06-summary.json"
+      ],
+      "note": "testRealEstatePublicSampleScroll failed cycle-06 \u2014 public sample scroll/claims not proven on device",
+      "updated": "2026-09-21T21:55:00-05:00"
+    },
+    {
+      "id": "REALESTATE-003",
+      "app": "Black Label Real Estate CRM",
+      "bundle_id": "com.blacklabel.realestate",
+      "public_version": "1.3",
+      "source_url": "https://apps.apple.com/us/app/black-label-real-estate-crm/id6781964407?uo=4",
+      "claim": "sample no live-data requests",
+      "status": "FAIL",
+      "evidence": [
+        "phone-cycle-06.log",
+        "cycle-06-summary.json"
+      ],
+      "note": "testRealEstatePublicSampleScroll failed cycle-06 \u2014 public sample scroll/claims not proven on device",
+      "updated": "2026-09-21T21:55:00-05:00"
+    },
+    {
+      "id": "REALESTATE-004",
+      "app": "Black Label Real Estate CRM",
+      "bundle_id": "com.blacklabel.realestate",
+      "public_version": "1.3",
+      "source_url": "https://apps.apple.com/us/app/black-label-real-estate-crm/id6781964407?uo=4",
+      "claim": "sample cannot import/export/mutate/route/contact/advance lead",
+      "status": "FAIL",
+      "evidence": [
+        "phone-cycle-06.log",
+        "cycle-06-summary.json"
+      ],
+      "note": "testRealEstatePublicSampleScroll failed cycle-06 \u2014 public sample scroll/claims not proven on device",
+      "updated": "2026-09-21T21:55:00-05:00"
+    },
+    {
+      "id": "REALESTATE-005",
+      "app": "Black Label Real Estate CRM",
+      "bundle_id": "com.blacklabel.realestate",
+      "public_version": "1.3",
+      "source_url": "https://apps.apple.com/us/app/black-label-real-estate-crm/id6781964407?uo=4",
+      "claim": "buyer source connections",
+      "status": "NOT_TESTED",
+      "evidence": []
+    },
+    {
+      "id": "REALESTATE-006",
+      "app": "Black Label Real Estate CRM",
+      "bundle_id": "com.blacklabel.realestate",
+      "public_version": "1.3",
+      "source_url": "https://apps.apple.com/us/app/black-label-real-estate-crm/id6781964407?uo=4",
+      "claim": "parcel research",
+      "status": "NOT_TESTED",
+      "evidence": []
+    },
+    {
+      "id": "REALESTATE-007",
+      "app": "Black Label Real Estate CRM",
+      "bundle_id": "com.blacklabel.realestate",
+      "public_version": "1.3",
+      "source_url": "https://apps.apple.com/us/app/black-label-real-estate-crm/id6781964407?uo=4",
+      "claim": "owner research",
+      "status": "NOT_TESTED",
+      "evidence": []
+    },
+    {
+      "id": "REALESTATE-008",
+      "app": "Black Label Real Estate CRM",
+      "bundle_id": "com.blacklabel.realestate",
+      "public_version": "1.3",
+      "source_url": "https://apps.apple.com/us/app/black-label-real-estate-crm/id6781964407?uo=4",
+      "claim": "sold comparables",
+      "status": "NOT_TESTED",
+      "evidence": []
+    },
+    {
+      "id": "REALESTATE-009",
+      "app": "Black Label Real Estate CRM",
+      "bundle_id": "com.blacklabel.realestate",
+      "public_version": "1.3",
+      "source_url": "https://apps.apple.com/us/app/black-label-real-estate-crm/id6781964407?uo=4",
+      "claim": "ARV calculation",
+      "status": "NOT_TESTED",
+      "evidence": []
+    },
+    {
+      "id": "REALESTATE-010",
+      "app": "Black Label Real Estate CRM",
+      "bundle_id": "com.blacklabel.realestate",
+      "public_version": "1.3",
+      "source_url": "https://apps.apple.com/us/app/black-label-real-estate-crm/id6781964407?uo=4",
+      "claim": "decision dossiers",
+      "status": "NOT_TESTED",
+      "evidence": []
+    },
+    {
+      "id": "REALESTATE-011",
+      "app": "Black Label Real Estate CRM",
+      "bundle_id": "com.blacklabel.realestate",
+      "public_version": "1.3",
+      "source_url": "https://apps.apple.com/us/app/black-label-real-estate-crm/id6781964407?uo=4",
+      "claim": "underwriting calculators",
+      "status": "NOT_TESTED",
+      "evidence": []
+    },
+    {
+      "id": "REALESTATE-012",
+      "app": "Black Label Real Estate CRM",
+      "bundle_id": "com.blacklabel.realestate",
+      "public_version": "1.3",
+      "source_url": "https://apps.apple.com/us/app/black-label-real-estate-crm/id6781964407?uo=4",
+      "claim": "route creation and map navigation",
+      "status": "NOT_TESTED",
+      "evidence": []
+    },
+    {
+      "id": "REALESTATE-013",
+      "app": "Black Label Real Estate CRM",
+      "bundle_id": "com.blacklabel.realestate",
+      "public_version": "1.3",
+      "source_url": "https://apps.apple.com/us/app/black-label-real-estate-crm/id6781964407?uo=4",
+      "claim": "CRM pipeline",
+      "status": "NOT_TESTED",
+      "evidence": []
+    },
+    {
+      "id": "REALESTATE-014",
+      "app": "Black Label Real Estate CRM",
+      "bundle_id": "com.blacklabel.realestate",
+      "public_version": "1.3",
+      "source_url": "https://apps.apple.com/us/app/black-label-real-estate-crm/id6781964407?uo=4",
+      "claim": "exports",
+      "status": "NOT_TESTED",
+      "evidence": []
+    },
+    {
+      "id": "REALESTATE-015",
+      "app": "Black Label Real Estate CRM",
+      "bundle_id": "com.blacklabel.realestate",
+      "public_version": "1.3",
+      "source_url": "https://apps.apple.com/us/app/black-label-real-estate-crm/id6781964407?uo=4",
+      "claim": "offer generation",
+      "status": "NOT_TESTED",
+      "evidence": []
+    },
+    {
+      "id": "REALESTATE-016",
+      "app": "Black Label Real Estate CRM",
+      "bundle_id": "com.blacklabel.realestate",
+      "public_version": "1.3",
+      "source_url": "https://apps.apple.com/us/app/black-label-real-estate-crm/id6781964407?uo=4",
+      "claim": "outreach workflow preview",
+      "status": "NOT_TESTED",
+      "evidence": []
+    },
+    {
+      "id": "REALESTATE-017",
+      "app": "Black Label Real Estate CRM",
+      "bundle_id": "com.blacklabel.realestate",
+      "public_version": "1.3",
+      "source_url": "https://apps.apple.com/us/app/black-label-real-estate-crm/id6781964407?uo=4",
+      "claim": "StoreKit subscription gates full workspace",
+      "status": "BLOCKED",
+      "evidence": [
+        "evidence/iap-sandbox-gate-20260921.md"
+      ],
+      "note": "ASC Starter/Growth/Pro PREPARE_FOR_SUBMISSION \u2014 sandbox buys blocked; StoreKit gate not verifiable",
+      "updated": "2026-09-21T21:55:00-05:00"
+    },
+    {
+      "id": "REALESTATE-018",
+      "app": "Black Label Real Estate CRM",
+      "bundle_id": "com.blacklabel.realestate",
+      "public_version": "1.3",
+      "source_url": "https://apps.apple.com/us/app/black-label-real-estate-crm/id6781964407?uo=4",
+      "claim": "Restore Purchases",
+      "status": "FAIL",
+      "evidence": [
+        "phone-cycle-06.log",
+        "cycle-06-summary.json"
+      ],
+      "note": "testRealEstateRestore failed cycle-06",
+      "updated": "2026-09-21T21:55:00-05:00"
+    },
+    {
+      "id": "REALESTATE-019",
+      "app": "Black Label Real Estate CRM",
+      "bundle_id": "com.blacklabel.realestate",
+      "public_version": "1.3",
+      "source_url": "https://apps.apple.com/us/app/black-label-real-estate-crm/id6781964407?uo=4",
+      "claim": "Manage Subscription",
+      "status": "NOT_TESTED",
+      "evidence": []
+    },
+    {
+      "id": "REALESTATE-020",
+      "app": "Black Label Real Estate CRM",
+      "bundle_id": "com.blacklabel.realestate",
+      "public_version": "1.3",
+      "source_url": "https://apps.apple.com/us/app/black-label-real-estate-crm/id6781964407?uo=4",
+      "claim": "paid workspace starts empty",
+      "status": "NOT_TESTED",
+      "evidence": []
+    },
+    {
+      "id": "REALESTATE-021",
+      "app": "Black Label Real Estate CRM",
+      "bundle_id": "com.blacklabel.realestate",
+      "public_version": "1.3",
+      "source_url": "https://apps.apple.com/us/app/black-label-real-estate-crm/id6781964407?uo=4",
+      "claim": "phone navigation/scroll/keyboard/sheet dismissal",
+      "status": "FAIL",
+      "evidence": [
+        "phone-cycle-06.log",
+        "cycle-06-summary.json"
+      ],
+      "note": "Public sample scroll failure blocks phone nav/scroll proof for sample surface",
+      "updated": "2026-09-21T21:55:00-05:00"
+    },
+    {
+      "id": "MARKETING-001",
+      "app": "Black Label Marketing Studio",
+      "bundle_id": "com.blacklabel.marketing",
+      "public_version": "1.2",
+      "source_url": "https://apps.apple.com/us/app/black-label-marketing-studio/id6781964065?uo=4",
+      "claim": "one fictional read-only sample campaign",
+      "status": "FAIL",
+      "evidence": [
+        "phone-cycle-06.log",
+        "cycle-06-summary.json"
+      ],
+      "note": "testMarketingPublicSample failed cycle-06",
+      "updated": "2026-09-21T21:55:00-05:00"
+    },
+    {
+      "id": "MARKETING-002",
+      "app": "Black Label Marketing Studio",
+      "bundle_id": "com.blacklabel.marketing",
+      "public_version": "1.2",
+      "source_url": "https://apps.apple.com/us/app/black-label-marketing-studio/id6781964065?uo=4",
+      "claim": "sample has zero contacts/results/sends/provider activity",
+      "status": "FAIL",
+      "evidence": [
+        "phone-cycle-06.log",
+        "cycle-06-summary.json"
+      ],
+      "note": "testMarketingPublicSample failed cycle-06 \u2014 sample emptiness not proven",
+      "updated": "2026-09-21T21:55:00-05:00"
+    },
+    {
+      "id": "MARKETING-003",
+      "app": "Black Label Marketing Studio",
+      "bundle_id": "com.blacklabel.marketing",
+      "public_version": "1.2",
+      "source_url": "https://apps.apple.com/us/app/black-label-marketing-studio/id6781964065?uo=4",
+      "claim": "sample prevents publish/export/writes",
+      "status": "FAIL",
+      "evidence": [
+        "phone-cycle-06.log",
+        "cycle-06-summary.json"
+      ],
+      "note": "testMarketingPublicSample failed cycle-06 \u2014 write prevention not proven",
+      "updated": "2026-09-21T21:55:00-05:00"
+    },
+    {
+      "id": "MARKETING-004",
+      "app": "Black Label Marketing Studio",
+      "bundle_id": "com.blacklabel.marketing",
+      "public_version": "1.2",
+      "source_url": "https://apps.apple.com/us/app/black-label-marketing-studio/id6781964065?uo=4",
+      "claim": "buyer-owned asset import",
+      "status": "NOT_TESTED",
+      "evidence": []
+    },
+    {
+      "id": "MARKETING-005",
+      "app": "Black Label Marketing Studio",
+      "bundle_id": "com.blacklabel.marketing",
+      "public_version": "1.2",
+      "source_url": "https://apps.apple.com/us/app/black-label-marketing-studio/id6781964065?uo=4",
+      "claim": "reel production and export",
+      "status": "NOT_TESTED",
+      "evidence": []
+    },
+    {
+      "id": "MARKETING-006",
+      "app": "Black Label Marketing Studio",
+      "bundle_id": "com.blacklabel.marketing",
+      "public_version": "1.2",
+      "source_url": "https://apps.apple.com/us/app/black-label-marketing-studio/id6781964065?uo=4",
+      "claim": "landing page production and export",
+      "status": "NOT_TESTED",
+      "evidence": []
+    },
+    {
+      "id": "MARKETING-007",
+      "app": "Black Label Marketing Studio",
+      "bundle_id": "com.blacklabel.marketing",
+      "public_version": "1.2",
+      "source_url": "https://apps.apple.com/us/app/black-label-marketing-studio/id6781964065?uo=4",
+      "claim": "social draft production",
+      "status": "NOT_TESTED",
+      "evidence": []
+    },
+    {
+      "id": "MARKETING-008",
+      "app": "Black Label Marketing Studio",
+      "bundle_id": "com.blacklabel.marketing",
+      "public_version": "1.2",
+      "source_url": "https://apps.apple.com/us/app/black-label-marketing-studio/id6781964065?uo=4",
+      "claim": "email spotlight production",
+      "status": "NOT_TESTED",
+      "evidence": []
+    },
+    {
+      "id": "MARKETING-009",
+      "app": "Black Label Marketing Studio",
+      "bundle_id": "com.blacklabel.marketing",
+      "public_version": "1.2",
+      "source_url": "https://apps.apple.com/us/app/black-label-marketing-studio/id6781964065?uo=4",
+      "claim": "campaign operations",
+      "status": "NOT_TESTED",
+      "evidence": []
+    },
+    {
+      "id": "MARKETING-010",
+      "app": "Black Label Marketing Studio",
+      "bundle_id": "com.blacklabel.marketing",
+      "public_version": "1.2",
+      "source_url": "https://apps.apple.com/us/app/black-label-marketing-studio/id6781964065?uo=4",
+      "claim": "content editors",
+      "status": "NOT_TESTED",
+      "evidence": []
+    },
+    {
+      "id": "MARKETING-011",
+      "app": "Black Label Marketing Studio",
+      "bundle_id": "com.blacklabel.marketing",
+      "public_version": "1.2",
+      "source_url": "https://apps.apple.com/us/app/black-label-marketing-studio/id6781964065?uo=4",
+      "claim": "provider connections",
+      "status": "PASS",
+      "evidence": [
+        "evidence/marketing-physical-connectors-r5.md",
+        "evidence/physical-connectors-r5.log"
+      ],
+      "note": "testMarketingPhysicalConnectors passed after More/Overview nav fix (physical-connectors-r5)",
+      "updated": "2026-09-21T21:55:00-05:00",
+      "device_build": "developer ~1.0 connectors-r5 @ UDID 00008140-001A0DA12EA2801C"
+    },
+    {
+      "id": "MARKETING-012",
+      "app": "Black Label Marketing Studio",
+      "bundle_id": "com.blacklabel.marketing",
+      "public_version": "1.2",
+      "source_url": "https://apps.apple.com/us/app/black-label-marketing-studio/id6781964065?uo=4",
+      "claim": "automation configuration and execution preview",
+      "status": "NOT_TESTED",
+      "evidence": []
+    },
+    {
+      "id": "MARKETING-013",
+      "app": "Black Label Marketing Studio",
+      "bundle_id": "com.blacklabel.marketing",
+      "public_version": "1.2",
+      "source_url": "https://apps.apple.com/us/app/black-label-marketing-studio/id6781964065?uo=4",
+      "claim": "publishing approval workflow",
+      "status": "NOT_TESTED",
+      "evidence": []
+    },
+    {
+      "id": "MARKETING-014",
+      "app": "Black Label Marketing Studio",
+      "bundle_id": "com.blacklabel.marketing",
+      "public_version": "1.2",
+      "source_url": "https://apps.apple.com/us/app/black-label-marketing-studio/id6781964065?uo=4",
+      "claim": "CRM",
+      "status": "NOT_TESTED",
+      "evidence": []
+    },
+    {
+      "id": "MARKETING-015",
+      "app": "Black Label Marketing Studio",
+      "bundle_id": "com.blacklabel.marketing",
+      "public_version": "1.2",
+      "source_url": "https://apps.apple.com/us/app/black-label-marketing-studio/id6781964065?uo=4",
+      "claim": "StoreKit subscription gates full workspace",
+      "status": "NOT_TESTED",
+      "evidence": []
+    },
+    {
+      "id": "MARKETING-016",
+      "app": "Black Label Marketing Studio",
+      "bundle_id": "com.blacklabel.marketing",
+      "public_version": "1.2",
+      "source_url": "https://apps.apple.com/us/app/black-label-marketing-studio/id6781964065?uo=4",
+      "claim": "Restore Purchases",
+      "status": "PASS",
+      "evidence": [
+        "phone-cycle-06.log",
+        "cycle-06-summary.json"
+      ],
+      "note": "testMarketingRestoreObservation passed cycle-06 (Restore control observed; not a completed restore purchase)",
+      "updated": "2026-09-21T21:55:00-05:00",
+      "device_build": "developer ~1.0 connectors-r5 @ UDID 00008140-001A0DA12EA2801C"
+    },
+    {
+      "id": "MARKETING-017",
+      "app": "Black Label Marketing Studio",
+      "bundle_id": "com.blacklabel.marketing",
+      "public_version": "1.2",
+      "source_url": "https://apps.apple.com/us/app/black-label-marketing-studio/id6781964065?uo=4",
+      "claim": "Manage Subscription",
+      "status": "NOT_TESTED",
+      "evidence": []
+    },
+    {
+      "id": "MARKETING-018",
+      "app": "Black Label Marketing Studio",
+      "bundle_id": "com.blacklabel.marketing",
+      "public_version": "1.2",
+      "source_url": "https://apps.apple.com/us/app/black-label-marketing-studio/id6781964065?uo=4",
+      "claim": "paid workspace starts empty",
+      "status": "NOT_TESTED",
+      "evidence": []
+    },
+    {
+      "id": "MARKETING-019",
+      "app": "Black Label Marketing Studio",
+      "bundle_id": "com.blacklabel.marketing",
+      "public_version": "1.2",
+      "source_url": "https://apps.apple.com/us/app/black-label-marketing-studio/id6781964065?uo=4",
+      "claim": "phone navigation/scroll/keyboard/sheet dismissal",
+      "status": "NOT_TESTED",
+      "evidence": []
+    },
+    {
+      "id": "GUARDIAN-001",
+      "app": "BLVigil: Home Presence",
+      "bundle_id": "com.blacklabel.homefront.guardian",
+      "public_version": "1.4",
+      "source_url": "https://apps.apple.com/us/app/blvigil-home-presence/id6783041003?uo=4",
+      "claim": "one fictional read-only Bedroom Readiness sample",
+      "status": "FAIL",
+      "evidence": [
+        "phone-cycle-06.log",
+        "cycle-06-summary.json"
+      ],
+      "note": "testVigilPublicSample failed cycle-06",
+      "updated": "2026-09-21T21:55:00-05:00"
+    },
+    {
+      "id": "GUARDIAN-002",
+      "app": "BLVigil: Home Presence",
+      "bundle_id": "com.blacklabel.homefront.guardian",
+      "public_version": "1.4",
+      "source_url": "https://apps.apple.com/us/app/blvigil-home-presence/id6783041003?uo=4",
+      "claim": "sample zero live records/alerts/history/sensors/network activity",
+      "status": "FAIL",
+      "evidence": [
+        "phone-cycle-06.log",
+        "cycle-06-summary.json"
+      ],
+      "note": "testVigilPublicSample failed cycle-06",
+      "updated": "2026-09-21T21:55:00-05:00"
+    },
+    {
+      "id": "GUARDIAN-003",
+      "app": "BLVigil: Home Presence",
+      "bundle_id": "com.blacklabel.homefront.guardian",
+      "public_version": "1.4",
+      "source_url": "https://apps.apple.com/us/app/blvigil-home-presence/id6783041003?uo=4",
+      "claim": "sample does not mutate or present telemetry as live",
+      "status": "FAIL",
+      "evidence": [
+        "phone-cycle-06.log",
+        "cycle-06-summary.json"
+      ],
+      "note": "testVigilPublicSample failed cycle-06",
+      "updated": "2026-09-21T21:55:00-05:00"
+    },
+    {
+      "id": "GUARDIAN-004",
+      "app": "BLVigil: Home Presence",
+      "bundle_id": "com.blacklabel.homefront.guardian",
+      "public_version": "1.4",
+      "source_url": "https://apps.apple.com/us/app/blvigil-home-presence/id6783041003?uo=4",
+      "claim": "buyer-owned hub connection",
+      "status": "NOT_TESTED",
+      "evidence": []
+    },
+    {
+      "id": "GUARDIAN-005",
+      "app": "BLVigil: Home Presence",
+      "bundle_id": "com.blacklabel.homefront.guardian",
+      "public_version": "1.4",
+      "source_url": "https://apps.apple.com/us/app/blvigil-home-presence/id6783041003?uo=4",
+      "claim": "rooms",
+      "status": "NOT_TESTED",
+      "evidence": []
+    },
+    {
+      "id": "GUARDIAN-006",
+      "app": "BLVigil: Home Presence",
+      "bundle_id": "com.blacklabel.homefront.guardian",
+      "public_version": "1.4",
+      "source_url": "https://apps.apple.com/us/app/blvigil-home-presence/id6783041003?uo=4",
+      "claim": "sensors",
+      "status": "NOT_TESTED",
+      "evidence": []
+    },
+    {
+      "id": "GUARDIAN-007",
+      "app": "BLVigil: Home Presence",
+      "bundle_id": "com.blacklabel.homefront.guardian",
+      "public_version": "1.4",
+      "source_url": "https://apps.apple.com/us/app/blvigil-home-presence/id6783041003?uo=4",
+      "claim": "presence",
+      "status": "NOT_TESTED",
+      "evidence": []
+    },
+    {
+      "id": "GUARDIAN-008",
+      "app": "BLVigil: Home Presence",
+      "bundle_id": "com.blacklabel.homefront.guardian",
+      "public_version": "1.4",
+      "source_url": "https://apps.apple.com/us/app/blvigil-home-presence/id6783041003?uo=4",
+      "claim": "alerts",
+      "status": "NOT_TESTED",
+      "evidence": []
+    },
+    {
+      "id": "GUARDIAN-009",
+      "app": "BLVigil: Home Presence",
+      "bundle_id": "com.blacklabel.homefront.guardian",
+      "public_version": "1.4",
+      "source_url": "https://apps.apple.com/us/app/blvigil-home-presence/id6783041003?uo=4",
+      "claim": "automation",
+      "status": "NOT_TESTED",
+      "evidence": []
+    },
+    {
+      "id": "GUARDIAN-010",
+      "app": "BLVigil: Home Presence",
+      "bundle_id": "com.blacklabel.homefront.guardian",
+      "public_version": "1.4",
+      "source_url": "https://apps.apple.com/us/app/blvigil-home-presence/id6783041003?uo=4",
+      "claim": "history",
+      "status": "NOT_TESTED",
+      "evidence": []
+    },
+    {
+      "id": "GUARDIAN-011",
+      "app": "BLVigil: Home Presence",
+      "bundle_id": "com.blacklabel.homefront.guardian",
+      "public_version": "1.4",
+      "source_url": "https://apps.apple.com/us/app/blvigil-home-presence/id6783041003?uo=4",
+      "claim": "cameras",
+      "status": "NOT_TESTED",
+      "evidence": []
+    },
+    {
+      "id": "GUARDIAN-012",
+      "app": "BLVigil: Home Presence",
+      "bundle_id": "com.blacklabel.homefront.guardian",
+      "public_version": "1.4",
+      "source_url": "https://apps.apple.com/us/app/blvigil-home-presence/id6783041003?uo=4",
+      "claim": "monitoring",
+      "status": "NOT_TESTED",
+      "evidence": []
+    },
+    {
+      "id": "GUARDIAN-013",
+      "app": "BLVigil: Home Presence",
+      "bundle_id": "com.blacklabel.homefront.guardian",
+      "public_version": "1.4",
+      "source_url": "https://apps.apple.com/us/app/blvigil-home-presence/id6783041003?uo=4",
+      "claim": "StoreKit subscription gates live use",
+      "status": "NOT_TESTED",
+      "evidence": []
+    },
+    {
+      "id": "GUARDIAN-014",
+      "app": "BLVigil: Home Presence",
+      "bundle_id": "com.blacklabel.homefront.guardian",
+      "public_version": "1.4",
+      "source_url": "https://apps.apple.com/us/app/blvigil-home-presence/id6783041003?uo=4",
+      "claim": "Restore Purchases",
+      "status": "FAIL",
+      "evidence": [
+        "phone-cycle-06.log",
+        "cycle-06-summary.json"
+      ],
+      "note": "testVigilRestore failed cycle-06",
+      "updated": "2026-09-21T21:55:00-05:00"
+    },
+    {
+      "id": "GUARDIAN-015",
+      "app": "BLVigil: Home Presence",
+      "bundle_id": "com.blacklabel.homefront.guardian",
+      "public_version": "1.4",
+      "source_url": "https://apps.apple.com/us/app/blvigil-home-presence/id6783041003?uo=4",
+      "claim": "Manage Subscription",
+      "status": "NOT_TESTED",
+      "evidence": []
+    },
+    {
+      "id": "GUARDIAN-016",
+      "app": "BLVigil: Home Presence",
+      "bundle_id": "com.blacklabel.homefront.guardian",
+      "public_version": "1.4",
+      "source_url": "https://apps.apple.com/us/app/blvigil-home-presence/id6783041003?uo=4",
+      "claim": "sample usable without account or hub",
+      "status": "BLOCKED",
+      "evidence": [
+        "phone-cycle-06.log",
+        "cycle-06-summary.json"
+      ],
+      "note": "Store download surface passed (testVigilStoreDownloadSurface) but public sample failed \u2014 sample-without-account not proven on public surface",
+      "updated": "2026-09-21T21:55:00-05:00"
+    },
+    {
+      "id": "GUARDIAN-017",
+      "app": "BLVigil: Home Presence",
+      "bundle_id": "com.blacklabel.homefront.guardian",
+      "public_version": "1.4",
+      "source_url": "https://apps.apple.com/us/app/blvigil-home-presence/id6783041003?uo=4",
+      "claim": "paid live workspace starts empty",
+      "status": "NOT_TESTED",
+      "evidence": []
+    },
+    {
+      "id": "GUARDIAN-018",
+      "app": "BLVigil: Home Presence",
+      "bundle_id": "com.blacklabel.homefront.guardian",
+      "public_version": "1.4",
+      "source_url": "https://apps.apple.com/us/app/blvigil-home-presence/id6783041003?uo=4",
+      "claim": "home data remains on buyer local network",
+      "status": "NOT_TESTED",
+      "evidence": []
+    },
+    {
+      "id": "GUARDIAN-019",
+      "app": "BLVigil: Home Presence",
+      "bundle_id": "com.blacklabel.homefront.guardian",
+      "public_version": "1.4",
+      "source_url": "https://apps.apple.com/us/app/blvigil-home-presence/id6783041003?uo=4",
+      "claim": "phone navigation/scroll/keyboard/sheet dismissal",
+      "status": "NOT_TESTED",
+      "evidence": []
+    }
+  ],
+  "developer_apps": [
+    "com.blacklabel.leads",
+    "com.blacklabel.sovereign",
+    "com.utah.utahApp"
+  ],
+  "last_updated": "2026-09-21T21:55:00-05:00",
+  "last_update_note": "Parent Mac-routed claims82 pass: mapped cycle-06 + sheet36 + marketing connectors-r5; no fabricated PASS; public free-sample claims FAIL on owner/dev installs"
+}

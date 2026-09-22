@@ -1,0 +1,994 @@
+Command line invocation:
+    /Users/michaelbarber/Downloads/Xcode-beta.app/Contents/Developer/usr/bin/xcodebuild test -project PhoneAcceptance.xcodeproj -scheme PhoneAcceptance -destination platform=iOS,id=00008140-001A0DA12EA2801C -derivedDataPath /tmp/blacklabel-phone-qa-derived -resultBundlePath /Users/michaelbarber/BlackLabel-Team/STATE/marketing-mobile-connectors-20260921/physical-connectors-r5.xcresult -parallel-testing-enabled NO "-only-testing:PhoneAcceptance/PhoneAcceptance/testMarketingPhysicalConnectors" "CODE_SIGN_IDENTITY=Apple Development"
+
+Build settings from command line:
+    CODE_SIGN_IDENTITY = Apple Development
+
+Writing result bundle at path:
+	/Users/michaelbarber/BlackLabel-Team/STATE/marketing-mobile-connectors-20260921/physical-connectors-r5.xcresult
+
+note: Using codesigning identity override: Apple Development
+ComputePackagePrebuildTargetDependencyGraph
+
+Prepare packages
+
+CreateBuildRequest
+
+SendProjectDescription
+
+CreateBuildOperation
+
+ComputeTargetDependencyGraph
+note: Building targets in dependency order
+note: Target dependency graph (1 target)
+    Target 'PhoneAcceptance' in project 'PhoneAcceptance' (no dependencies)
+
+GatherProvisioningInputs
+
+CreateBuildDescription
+
+ClangStatCache /Users/michaelbarber/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Users/michaelbarber/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.sdk /tmp/blacklabel-phone-qa-derived/SDKStatCaches.noindex/iphoneos27.0-24A5422a-5f1fc9d72919b63d0f31cdedd2e31012.sdkstatcache
+    cd /Users/michaelbarber/BlackLabel-Team/STATE/iphone-portfolio-qa-20260921/harness/PhoneAcceptance.xcodeproj
+    /Users/michaelbarber/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Users/michaelbarber/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.sdk -o /tmp/blacklabel-phone-qa-derived/SDKStatCaches.noindex/iphoneos27.0-24A5422a-5f1fc9d72919b63d0f31cdedd2e31012.sdkstatcache
+
+SwiftDriver PhoneAcceptance normal arm64 com.apple.xcode.tools.swift.compiler (in target 'PhoneAcceptance' from project 'PhoneAcceptance')
+    cd /Users/michaelbarber/BlackLabel-Team/STATE/iphone-portfolio-qa-20260921/harness
+    builtin-SwiftDriver -- /Users/michaelbarber/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name PhoneAcceptance -Onone @/tmp/blacklabel-phone-qa-derived/Build/Intermediates.noindex/PhoneAcceptance.build/Debug-iphoneos/PhoneAcceptance.build/Objects-normal/arm64/PhoneAcceptance.SwiftFileList -DDEBUG -module-alias Testing\=_Testing_Unavailable -plugin-path /Users/michaelbarber/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Users/michaelbarber/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.sdk -target arm64-apple-ios17.0 -g -module-cache-path /tmp/blacklabel-phone-qa-derived/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /tmp/blacklabel-phone-qa-derived/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /tmp/blacklabel-phone-qa-derived/Build/Products/Debug-iphoneos -Isystem /Users/michaelbarber/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/lib -F /tmp/blacklabel-phone-qa-derived/Build/Products/Debug-iphoneos -F /Users/michaelbarber/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/Frameworks -F /Users/michaelbarber/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.sdk/Developer/Library/Frameworks -parse-as-library -c -j18 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /tmp/blacklabel-phone-qa-derived/SDKStatCaches.noindex/iphoneos27.0-24A5422a-5f1fc9d72919b63d0f31cdedd2e31012.sdkstatcache -output-file-map /tmp/blacklabel-phone-qa-derived/Build/Intermediates.noindex/PhoneAcceptance.build/Debug-iphoneos/PhoneAcceptance.build/Objects-normal/arm64/PhoneAcceptance-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /tmp/blacklabel-phone-qa-derived/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /tmp/blacklabel-phone-qa-derived/ModuleCache.noindex -sdk-module-cache-path /tmp/blacklabel-phone-qa-derived/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /tmp/blacklabel-phone-qa-derived/Build/Intermediates.noindex/PhoneAcceptance.build/Debug-iphoneos/PhoneAcceptance.build/Objects-normal/arm64/PhoneAcceptance.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /tmp/blacklabel-phone-qa-derived/Build/Intermediates.noindex/PhoneAcceptance.build/Debug-iphoneos/PhoneAcceptance.build/Objects-normal/arm64/PhoneAcceptance-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /tmp/blacklabel-phone-qa-derived/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -emit-const-values -const-gather-protocols-list /tmp/blacklabel-phone-qa-derived/Build/Intermediates.noindex/PhoneAcceptance.build/Debug-iphoneos/PhoneAcceptance.build/Objects-normal/arm64/PhoneAcceptance_const_extract_protocols.json -Xcc -iquote -Xcc /tmp/blacklabel-phone-qa-derived/Build/Intermediates.noindex/PhoneAcceptance.build/Debug-iphoneos/PhoneAcceptance.build/PhoneAcceptance-generated-files.hmap -Xcc -I/tmp/blacklabel-phone-qa-derived/Build/Intermediates.noindex/PhoneAcceptance.build/Debug-iphoneos/PhoneAcceptance.build/PhoneAcceptance-own-target-headers.hmap -Xcc -I/tmp/blacklabel-phone-qa-derived/Build/Intermediates.noindex/PhoneAcceptance.build/Debug-iphoneos/PhoneAcceptance.build/PhoneAcceptance-all-target-headers.hmap -Xcc -iquote -Xcc /tmp/blacklabel-phone-qa-derived/Build/Intermediates.noindex/PhoneAcceptance.build/Debug-iphoneos/PhoneAcceptance.build/PhoneAcceptance-project-headers.hmap -Xcc -I/tmp/blacklabel-phone-qa-derived/Build/Products/Debug-iphoneos/include -Xcc -I/tmp/blacklabel-phone-qa-derived/Build/Intermediates.noindex/PhoneAcceptance.build/Debug-iphoneos/PhoneAcceptance.build/DerivedSources-normal/arm64 -Xcc -I/tmp/blacklabel-phone-qa-derived/Build/Intermediates.noindex/PhoneAcceptance.build/Debug-iphoneos/PhoneAcceptance.build/DerivedSources/arm64 -Xcc -I/tmp/blacklabel-phone-qa-derived/Build/Intermediates.noindex/PhoneAcceptance.build/Debug-iphoneos/PhoneAcceptance.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /tmp/blacklabel-phone-qa-derived/Build/Intermediates.noindex/PhoneAcceptance.build/Debug-iphoneos/PhoneAcceptance.build/Objects-normal/arm64/PhoneAcceptance-Swift.h -working-directory /Users/michaelbarber/BlackLabel-Team/STATE/iphone-portfolio-qa-20260921/harness -experimental-emit-module-separately -disable-cmo
+
+SwiftEmitModule normal arm64 Emitting\ module\ for\ PhoneAcceptance (in target 'PhoneAcceptance' from project 'PhoneAcceptance')
+
+SwiftCompile normal arm64 (in target 'PhoneAcceptance' from project 'PhoneAcceptance')
+    cd /Users/michaelbarber/BlackLabel-Team/STATE/iphone-portfolio-qa-20260921/harness
+    
+
+SwiftCompile normal arm64 Compiling\ PhoneAcceptance.swift /Users/michaelbarber/BlackLabel-Team/STATE/iphone-portfolio-qa-20260921/harness/UITests/PhoneAcceptance.swift (in target 'PhoneAcceptance' from project 'PhoneAcceptance')
+
+SwiftCompile normal arm64 /Users/michaelbarber/BlackLabel-Team/STATE/iphone-portfolio-qa-20260921/harness/UITests/PhoneAcceptance.swift (in target 'PhoneAcceptance' from project 'PhoneAcceptance')
+    cd /Users/michaelbarber/BlackLabel-Team/STATE/iphone-portfolio-qa-20260921/harness
+    builtin-SwiftPerFileCompile PhoneAcceptance.swift
+
+SwiftDriverJobDiscovery normal arm64 Compiling PhoneAcceptance.swift (in target 'PhoneAcceptance' from project 'PhoneAcceptance')
+
+SwiftDriver\ Compilation PhoneAcceptance normal arm64 com.apple.xcode.tools.swift.compiler (in target 'PhoneAcceptance' from project 'PhoneAcceptance')
+    cd /Users/michaelbarber/BlackLabel-Team/STATE/iphone-portfolio-qa-20260921/harness
+    builtin-Swift-Compilation -- /Users/michaelbarber/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name PhoneAcceptance -Onone @/tmp/blacklabel-phone-qa-derived/Build/Intermediates.noindex/PhoneAcceptance.build/Debug-iphoneos/PhoneAcceptance.build/Objects-normal/arm64/PhoneAcceptance.SwiftFileList -DDEBUG -module-alias Testing\=_Testing_Unavailable -plugin-path /Users/michaelbarber/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Users/michaelbarber/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.sdk -target arm64-apple-ios17.0 -g -module-cache-path /tmp/blacklabel-phone-qa-derived/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /tmp/blacklabel-phone-qa-derived/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /tmp/blacklabel-phone-qa-derived/Build/Products/Debug-iphoneos -Isystem /Users/michaelbarber/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/lib -F /tmp/blacklabel-phone-qa-derived/Build/Products/Debug-iphoneos -F /Users/michaelbarber/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/Frameworks -F /Users/michaelbarber/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.sdk/Developer/Library/Frameworks -parse-as-library -c -j18 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /tmp/blacklabel-phone-qa-derived/SDKStatCaches.noindex/iphoneos27.0-24A5422a-5f1fc9d72919b63d0f31cdedd2e31012.sdkstatcache -output-file-map /tmp/blacklabel-phone-qa-derived/Build/Intermediates.noindex/PhoneAcceptance.build/Debug-iphoneos/PhoneAcceptance.build/Objects-normal/arm64/PhoneAcceptance-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /tmp/blacklabel-phone-qa-derived/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /tmp/blacklabel-phone-qa-derived/ModuleCache.noindex -sdk-module-cache-path /tmp/blacklabel-phone-qa-derived/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /tmp/blacklabel-phone-qa-derived/Build/Intermediates.noindex/PhoneAcceptance.build/Debug-iphoneos/PhoneAcceptance.build/Objects-normal/arm64/PhoneAcceptance.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /tmp/blacklabel-phone-qa-derived/Build/Intermediates.noindex/PhoneAcceptance.build/Debug-iphoneos/PhoneAcceptance.build/Objects-normal/arm64/PhoneAcceptance-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /tmp/blacklabel-phone-qa-derived/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -emit-const-values -const-gather-protocols-list /tmp/blacklabel-phone-qa-derived/Build/Intermediates.noindex/PhoneAcceptance.build/Debug-iphoneos/PhoneAcceptance.build/Objects-normal/arm64/PhoneAcceptance_const_extract_protocols.json -Xcc -iquote -Xcc /tmp/blacklabel-phone-qa-derived/Build/Intermediates.noindex/PhoneAcceptance.build/Debug-iphoneos/PhoneAcceptance.build/PhoneAcceptance-generated-files.hmap -Xcc -I/tmp/blacklabel-phone-qa-derived/Build/Intermediates.noindex/PhoneAcceptance.build/Debug-iphoneos/PhoneAcceptance.build/PhoneAcceptance-own-target-headers.hmap -Xcc -I/tmp/blacklabel-phone-qa-derived/Build/Intermediates.noindex/PhoneAcceptance.build/Debug-iphoneos/PhoneAcceptance.build/PhoneAcceptance-all-target-headers.hmap -Xcc -iquote -Xcc /tmp/blacklabel-phone-qa-derived/Build/Intermediates.noindex/PhoneAcceptance.build/Debug-iphoneos/PhoneAcceptance.build/PhoneAcceptance-project-headers.hmap -Xcc -I/tmp/blacklabel-phone-qa-derived/Build/Products/Debug-iphoneos/include -Xcc -I/tmp/blacklabel-phone-qa-derived/Build/Intermediates.noindex/PhoneAcceptance.build/Debug-iphoneos/PhoneAcceptance.build/DerivedSources-normal/arm64 -Xcc -I/tmp/blacklabel-phone-qa-derived/Build/Intermediates.noindex/PhoneAcceptance.build/Debug-iphoneos/PhoneAcceptance.build/DerivedSources/arm64 -Xcc -I/tmp/blacklabel-phone-qa-derived/Build/Intermediates.noindex/PhoneAcceptance.build/Debug-iphoneos/PhoneAcceptance.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /tmp/blacklabel-phone-qa-derived/Build/Intermediates.noindex/PhoneAcceptance.build/Debug-iphoneos/PhoneAcceptance.build/Objects-normal/arm64/PhoneAcceptance-Swift.h -working-directory /Users/michaelbarber/BlackLabel-Team/STATE/iphone-portfolio-qa-20260921/harness -experimental-emit-module-separately -disable-cmo
+
+SwiftDriverJobDiscovery normal arm64 Emitting module for PhoneAcceptance (in target 'PhoneAcceptance' from project 'PhoneAcceptance')
+
+SwiftDriver\ Compilation\ Requirements PhoneAcceptance normal arm64 com.apple.xcode.tools.swift.compiler (in target 'PhoneAcceptance' from project 'PhoneAcceptance')
+    cd /Users/michaelbarber/BlackLabel-Team/STATE/iphone-portfolio-qa-20260921/harness
+    builtin-Swift-Compilation-Requirements -- /Users/michaelbarber/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name PhoneAcceptance -Onone @/tmp/blacklabel-phone-qa-derived/Build/Intermediates.noindex/PhoneAcceptance.build/Debug-iphoneos/PhoneAcceptance.build/Objects-normal/arm64/PhoneAcceptance.SwiftFileList -DDEBUG -module-alias Testing\=_Testing_Unavailable -plugin-path /Users/michaelbarber/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Users/michaelbarber/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.sdk -target arm64-apple-ios17.0 -g -module-cache-path /tmp/blacklabel-phone-qa-derived/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /tmp/blacklabel-phone-qa-derived/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /tmp/blacklabel-phone-qa-derived/Build/Products/Debug-iphoneos -Isystem /Users/michaelbarber/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/lib -F /tmp/blacklabel-phone-qa-derived/Build/Products/Debug-iphoneos -F /Users/michaelbarber/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/Frameworks -F /Users/michaelbarber/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.sdk/Developer/Library/Frameworks -parse-as-library -c -j18 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /tmp/blacklabel-phone-qa-derived/SDKStatCaches.noindex/iphoneos27.0-24A5422a-5f1fc9d72919b63d0f31cdedd2e31012.sdkstatcache -output-file-map /tmp/blacklabel-phone-qa-derived/Build/Intermediates.noindex/PhoneAcceptance.build/Debug-iphoneos/PhoneAcceptance.build/Objects-normal/arm64/PhoneAcceptance-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /tmp/blacklabel-phone-qa-derived/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /tmp/blacklabel-phone-qa-derived/ModuleCache.noindex -sdk-module-cache-path /tmp/blacklabel-phone-qa-derived/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /tmp/blacklabel-phone-qa-derived/Build/Intermediates.noindex/PhoneAcceptance.build/Debug-iphoneos/PhoneAcceptance.build/Objects-normal/arm64/PhoneAcceptance.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /tmp/blacklabel-phone-qa-derived/Build/Intermediates.noindex/PhoneAcceptance.build/Debug-iphoneos/PhoneAcceptance.build/Objects-normal/arm64/PhoneAcceptance-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /tmp/blacklabel-phone-qa-derived/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -emit-const-values -const-gather-protocols-list /tmp/blacklabel-phone-qa-derived/Build/Intermediates.noindex/PhoneAcceptance.build/Debug-iphoneos/PhoneAcceptance.build/Objects-normal/arm64/PhoneAcceptance_const_extract_protocols.json -Xcc -iquote -Xcc /tmp/blacklabel-phone-qa-derived/Build/Intermediates.noindex/PhoneAcceptance.build/Debug-iphoneos/PhoneAcceptance.build/PhoneAcceptance-generated-files.hmap -Xcc -I/tmp/blacklabel-phone-qa-derived/Build/Intermediates.noindex/PhoneAcceptance.build/Debug-iphoneos/PhoneAcceptance.build/PhoneAcceptance-own-target-headers.hmap -Xcc -I/tmp/blacklabel-phone-qa-derived/Build/Intermediates.noindex/PhoneAcceptance.build/Debug-iphoneos/PhoneAcceptance.build/PhoneAcceptance-all-target-headers.hmap -Xcc -iquote -Xcc /tmp/blacklabel-phone-qa-derived/Build/Intermediates.noindex/PhoneAcceptance.build/Debug-iphoneos/PhoneAcceptance.build/PhoneAcceptance-project-headers.hmap -Xcc -I/tmp/blacklabel-phone-qa-derived/Build/Products/Debug-iphoneos/include -Xcc -I/tmp/blacklabel-phone-qa-derived/Build/Intermediates.noindex/PhoneAcceptance.build/Debug-iphoneos/PhoneAcceptance.build/DerivedSources-normal/arm64 -Xcc -I/tmp/blacklabel-phone-qa-derived/Build/Intermediates.noindex/PhoneAcceptance.build/Debug-iphoneos/PhoneAcceptance.build/DerivedSources/arm64 -Xcc -I/tmp/blacklabel-phone-qa-derived/Build/Intermediates.noindex/PhoneAcceptance.build/Debug-iphoneos/PhoneAcceptance.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /tmp/blacklabel-phone-qa-derived/Build/Intermediates.noindex/PhoneAcceptance.build/Debug-iphoneos/PhoneAcceptance.build/Objects-normal/arm64/PhoneAcceptance-Swift.h -working-directory /Users/michaelbarber/BlackLabel-Team/STATE/iphone-portfolio-qa-20260921/harness -experimental-emit-module-separately -disable-cmo
+
+Copy /tmp/blacklabel-phone-qa-derived/Build/Products/Debug-iphoneos/PhoneAcceptance.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo /tmp/blacklabel-phone-qa-derived/Build/Intermediates.noindex/PhoneAcceptance.build/Debug-iphoneos/PhoneAcceptance.build/Objects-normal/arm64/PhoneAcceptance.swiftsourceinfo (in target 'PhoneAcceptance' from project 'PhoneAcceptance')
+    cd /Users/michaelbarber/BlackLabel-Team/STATE/iphone-portfolio-qa-20260921/harness
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/blacklabel-phone-qa-derived/Build/Intermediates.noindex/PhoneAcceptance.build/Debug-iphoneos/PhoneAcceptance.build/Objects-normal/arm64/PhoneAcceptance.swiftsourceinfo /tmp/blacklabel-phone-qa-derived/Build/Products/Debug-iphoneos/PhoneAcceptance.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo
+
+Copy /tmp/blacklabel-phone-qa-derived/Build/Products/Debug-iphoneos/PhoneAcceptance.swiftmodule/arm64-apple-ios.abi.json /tmp/blacklabel-phone-qa-derived/Build/Intermediates.noindex/PhoneAcceptance.build/Debug-iphoneos/PhoneAcceptance.build/Objects-normal/arm64/PhoneAcceptance.abi.json (in target 'PhoneAcceptance' from project 'PhoneAcceptance')
+    cd /Users/michaelbarber/BlackLabel-Team/STATE/iphone-portfolio-qa-20260921/harness
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/blacklabel-phone-qa-derived/Build/Intermediates.noindex/PhoneAcceptance.build/Debug-iphoneos/PhoneAcceptance.build/Objects-normal/arm64/PhoneAcceptance.abi.json /tmp/blacklabel-phone-qa-derived/Build/Products/Debug-iphoneos/PhoneAcceptance.swiftmodule/arm64-apple-ios.abi.json
+
+Ld /tmp/blacklabel-phone-qa-derived/Build/Products/Debug-iphoneos/PhoneAcceptance-Runner.app/PlugIns/PhoneAcceptance.xctest/PhoneAcceptance normal (in target 'PhoneAcceptance' from project 'PhoneAcceptance')
+    cd /Users/michaelbarber/BlackLabel-Team/STATE/iphone-portfolio-qa-20260921/harness
+    /Users/michaelbarber/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-ios17.0 -bundle -isysroot /Users/michaelbarber/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.sdk -O0 -Xlinker -no_warn_duplicate_libraries -L/tmp/blacklabel-phone-qa-derived/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphoneos -L/tmp/blacklabel-phone-qa-derived/Build/Products/Debug-iphoneos -L/Users/michaelbarber/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/lib -F/tmp/blacklabel-phone-qa-derived/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphoneos -F/tmp/blacklabel-phone-qa-derived/Build/Products/Debug-iphoneos -iframework /Users/michaelbarber/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/Frameworks -iframework /Users/michaelbarber/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.sdk/Developer/Library/Frameworks -filelist /tmp/blacklabel-phone-qa-derived/Build/Intermediates.noindex/PhoneAcceptance.build/Debug-iphoneos/PhoneAcceptance.build/Objects-normal/arm64/PhoneAcceptance.LinkFileList -Xlinker -rpath -Xlinker /usr/lib/swift -Xlinker -rpath -Xlinker @loader_path/Frameworks -Xlinker -rpath -Xlinker @executable_path/Frameworks -Xlinker -dead_strip -Xlinker -object_path_lto -Xlinker /tmp/blacklabel-phone-qa-derived/Build/Intermediates.noindex/PhoneAcceptance.build/Debug-iphoneos/PhoneAcceptance.build/Objects-normal/arm64/PhoneAcceptance_lto.o -rdynamic -Xlinker -no_deduplicate -Xlinker -dependency_info -Xlinker /tmp/blacklabel-phone-qa-derived/Build/Intermediates.noindex/PhoneAcceptance.build/Debug-iphoneos/PhoneAcceptance.build/Objects-normal/arm64/PhoneAcceptance_dependency_info.dat -fobjc-link-runtime -L/Users/michaelbarber/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos -L/usr/lib/swift -Xlinker -add_ast_path -Xlinker /tmp/blacklabel-phone-qa-derived/Build/Intermediates.noindex/PhoneAcceptance.build/Debug-iphoneos/PhoneAcceptance.build/Objects-normal/arm64/PhoneAcceptance.swiftmodule -Xlinker -needed_framework -Xlinker XCTest -framework XCTest -Xlinker -needed-lXCTestSwiftSupport -lXCTestSwiftSupport -Xlinker -no_adhoc_codesign -o /tmp/blacklabel-phone-qa-derived/Build/Products/Debug-iphoneos/PhoneAcceptance-Runner.app/PlugIns/PhoneAcceptance.xctest/PhoneAcceptance
+
+ExtractAppIntentsMetadata (in target 'PhoneAcceptance' from project 'PhoneAcceptance')
+    cd /Users/michaelbarber/BlackLabel-Team/STATE/iphone-portfolio-qa-20260921/harness
+    /Users/michaelbarber/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsmetadataprocessor --toolchain-dir /Users/michaelbarber/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --module-name PhoneAcceptance --sdk-root /Users/michaelbarber/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.sdk --xcode-version 27A5252f --platform-family iOS --deployment-target 17.0 --bundle-identifier com.blacklabel.academy.uitests --output /tmp/blacklabel-phone-qa-derived/Build/Products/Debug-iphoneos/PhoneAcceptance-Runner.app/PlugIns/PhoneAcceptance.xctest --target-triple arm64-apple-ios17.0 --binary-file /tmp/blacklabel-phone-qa-derived/Build/Products/Debug-iphoneos/PhoneAcceptance-Runner.app/PlugIns/PhoneAcceptance.xctest/PhoneAcceptance --dependency-file /tmp/blacklabel-phone-qa-derived/Build/Intermediates.noindex/PhoneAcceptance.build/Debug-iphoneos/PhoneAcceptance.build/Objects-normal/arm64/PhoneAcceptance_dependency_info.dat --stringsdata-file /tmp/blacklabel-phone-qa-derived/Build/Intermediates.noindex/PhoneAcceptance.build/Debug-iphoneos/PhoneAcceptance.build/Objects-normal/arm64/ExtractedAppShortcutsMetadata.stringsdata --source-file-list /tmp/blacklabel-phone-qa-derived/Build/Intermediates.noindex/PhoneAcceptance.build/Debug-iphoneos/PhoneAcceptance.build/Objects-normal/arm64/PhoneAcceptance.SwiftFileList --metadata-file-list /tmp/blacklabel-phone-qa-derived/Build/Intermediates.noindex/PhoneAcceptance.build/Debug-iphoneos/PhoneAcceptance.build/PhoneAcceptance.DependencyMetadataFileList --static-metadata-file-list /tmp/blacklabel-phone-qa-derived/Build/Intermediates.noindex/PhoneAcceptance.build/Debug-iphoneos/PhoneAcceptance.build/PhoneAcceptance.DependencyStaticMetadataFileList --swift-const-vals-list /tmp/blacklabel-phone-qa-derived/Build/Intermediates.noindex/PhoneAcceptance.build/Debug-iphoneos/PhoneAcceptance.build/Objects-normal/arm64/PhoneAcceptance.SwiftConstValuesFileList --compile-time-extraction --deployment-aware-processing --no-app-shortcuts-localization
+2026-09-21 22:43:55.445 appintentsmetadataprocessor[76220:20145071] Starting appintentsmetadataprocessor export
+2026-09-21 22:43:55.447 appintentsmetadataprocessor[76220:20145071] warning: Metadata extraction skipped, no AppIntents.framework dependency found
+
+CopySwiftLibs /tmp/blacklabel-phone-qa-derived/Build/Products/Debug-iphoneos/PhoneAcceptance-Runner.app/PlugIns/PhoneAcceptance.xctest (in target 'PhoneAcceptance' from project 'PhoneAcceptance')
+    cd /Users/michaelbarber/BlackLabel-Team/STATE/iphone-portfolio-qa-20260921/harness
+    builtin-swiftStdLibTool --copy --verbose --sign 968FA5DA76BDBB95A7667E201CEF13C8C6E613B3 --scan-executable /tmp/blacklabel-phone-qa-derived/Build/Products/Debug-iphoneos/PhoneAcceptance-Runner.app/PlugIns/PhoneAcceptance.xctest/PhoneAcceptance --scan-folder /tmp/blacklabel-phone-qa-derived/Build/Products/Debug-iphoneos/PhoneAcceptance-Runner.app/PlugIns/PhoneAcceptance.xctest/Frameworks --scan-folder /tmp/blacklabel-phone-qa-derived/Build/Products/Debug-iphoneos/PhoneAcceptance-Runner.app/PlugIns/PhoneAcceptance.xctest/PlugIns --scan-folder /tmp/blacklabel-phone-qa-derived/Build/Products/Debug-iphoneos/PhoneAcceptance-Runner.app/PlugIns/PhoneAcceptance.xctest/SystemExtensions --scan-folder /tmp/blacklabel-phone-qa-derived/Build/Products/Debug-iphoneos/PhoneAcceptance-Runner.app/PlugIns/PhoneAcceptance.xctest/Extensions --platform iphoneos --toolchain /Users/michaelbarber/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --destination /tmp/blacklabel-phone-qa-derived/Build/Products/Debug-iphoneos/PhoneAcceptance-Runner.app/PlugIns/PhoneAcceptance.xctest/Frameworks --strip-bitcode --scan-executable /Users/michaelbarber/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/lib/libXCTestSwiftSupport.dylib --strip-bitcode-tool /Users/michaelbarber/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip --emit-dependency-info /tmp/blacklabel-phone-qa-derived/Build/Intermediates.noindex/PhoneAcceptance.build/Debug-iphoneos/PhoneAcceptance.build/SwiftStdLibToolInputDependencies.dep --filter-for-swift-os
+
+GenerateDSYMFile /tmp/blacklabel-phone-qa-derived/Build/Products/Debug-iphoneos/PhoneAcceptance-Runner.app/PlugIns/PhoneAcceptance.xctest.dSYM /tmp/blacklabel-phone-qa-derived/Build/Products/Debug-iphoneos/PhoneAcceptance-Runner.app/PlugIns/PhoneAcceptance.xctest/PhoneAcceptance (in target 'PhoneAcceptance' from project 'PhoneAcceptance')
+    cd /Users/michaelbarber/BlackLabel-Team/STATE/iphone-portfolio-qa-20260921/harness
+    export PATH\=/Users/michaelbarber/Downloads/Xcode-beta.app/Contents/SharedFrameworks/SwiftBuild.framework/Versions/A/PlugIns/SWBBuildService.bundle/Contents/PlugIns/SWBUniversalPlatformPlugin.bundle/Contents/Frameworks/SWBUniversalPlatform.framework/Resources:/Users/michaelbarber/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin:/Users/michaelbarber/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/local/bin:/Users/michaelbarber/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/libexec:/Users/michaelbarber/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/usr/bin:/Users/michaelbarber/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/usr/local/bin:/Users/michaelbarber/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Users/michaelbarber/Downloads/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/local/bin:/Users/michaelbarber/Downloads/Xcode-beta.app/Contents/Developer/usr/bin:/Users/michaelbarber/Downloads/Xcode-beta.app/Contents/Developer/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/homebrew/bin:/Users/michaelbarber/.local/bin:/Users/michaelbarber/.kimi-code/bin:/opt/homebrew/share/google-cloud-sdk/bin:/Users/michaelbarber/.antigravity-ide/antigravity-ide/bin:/Users/michaelbarber/.bun/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/pkg/env/global/bin:/Library/Apple/usr/bin:/Users/michaelbarber/.cargo/bin
+    /Users/michaelbarber/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /tmp/blacklabel-phone-qa-derived/Build/Products/Debug-iphoneos/PhoneAcceptance-Runner.app/PlugIns/PhoneAcceptance.xctest/PhoneAcceptance -o /tmp/blacklabel-phone-qa-derived/Build/Products/Debug-iphoneos/PhoneAcceptance-Runner.app/PlugIns/PhoneAcceptance.xctest.dSYM
+
+CodeSign /tmp/blacklabel-phone-qa-derived/Build/Products/Debug-iphoneos/PhoneAcceptance-Runner.app/PlugIns/PhoneAcceptance.xctest (in target 'PhoneAcceptance' from project 'PhoneAcceptance')
+    cd /Users/michaelbarber/BlackLabel-Team/STATE/iphone-portfolio-qa-20260921/harness
+    
+    Signing Identity:     "Apple Development: MICHAEL THOMAS LYNWOOD BURNS BARBER (4R784MFLD7)"
+    Provisioning Profile: "iOS Team Provisioning Profile: *"
+                          (9f5b0d05-36be-4200-b561-19a5edcdbcfd)
+    
+    /usr/bin/codesign --force --sign 968FA5DA76BDBB95A7667E201CEF13C8C6E613B3 --entitlements /tmp/blacklabel-phone-qa-derived/Build/Intermediates.noindex/PhoneAcceptance.build/Debug-iphoneos/PhoneAcceptance.build/PhoneAcceptance.xctest.xcent --timestamp\=none --generate-entitlement-der /tmp/blacklabel-phone-qa-derived/Build/Products/Debug-iphoneos/PhoneAcceptance-Runner.app/PlugIns/PhoneAcceptance.xctest
+
+CodeSign /tmp/blacklabel-phone-qa-derived/Build/Products/Debug-iphoneos/PhoneAcceptance-Runner.app (in target 'PhoneAcceptance' from project 'PhoneAcceptance')
+    cd /Users/michaelbarber/BlackLabel-Team/STATE/iphone-portfolio-qa-20260921/harness
+    
+    Signing Identity:     "Apple Development: MICHAEL THOMAS LYNWOOD BURNS BARBER (4R784MFLD7)"
+    Provisioning Profile: "iOS Team Provisioning Profile: *"
+                          (9f5b0d05-36be-4200-b561-19a5edcdbcfd)
+    
+    /usr/bin/codesign --force --sign 968FA5DA76BDBB95A7667E201CEF13C8C6E613B3 --entitlements /tmp/blacklabel-phone-qa-derived/Build/Intermediates.noindex/PhoneAcceptance.build/Debug-iphoneos/PhoneAcceptance.build/PhoneAcceptance.xctest.xcent --timestamp\=none --generate-entitlement-der /tmp/blacklabel-phone-qa-derived/Build/Products/Debug-iphoneos/PhoneAcceptance-Runner.app
+/tmp/blacklabel-phone-qa-derived/Build/Products/Debug-iphoneos/PhoneAcceptance-Runner.app: replacing existing signature
+
+PruneExplicitPrecompiledModules /tmp/blacklabel-phone-qa-derived/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules
+
+PruneExplicitPrecompiledModules /tmp/blacklabel-phone-qa-derived/Build/Intermediates.noindex/ExplicitPrecompiledModules
+
+PruneExplicitPrecompiledModules /tmp/blacklabel-phone-qa-derived/SDKExplicitPrecompiledModules
+
+2026-09-21 22:43:57.408441-0400 PhoneAcceptance-Runner[12920:1477487] [Default] Running tests...
+    t =      nans Interface orientation changed to Portrait
+Test Suite 'Selected tests' started at 2026-09-21 22:43:57.625.
+Test Suite 'PhoneAcceptance.xctest' started at 2026-09-21 22:43:57.625.
+Test Suite 'PhoneAcceptance' started at 2026-09-21 22:43:57.625.
+Test Case '-[PhoneAcceptance.PhoneAcceptance testMarketingPhysicalConnectors]' started.
+    t =     0.00s Start Test at 2026-09-21 22:43:57.626
+    t =     0.01s Set Up
+    t =     0.01s Open com.blacklabel.marketing
+    t =     0.01s     Launch com.blacklabel.marketing
+    t =     0.18s         Setting up automation session
+    t =     0.33s         Wait for com.blacklabel.marketing to idle
+    t =     1.61s Wait for com.blacklabel.marketing to become Running Foreground
+    t =     1.66s Checking existence of `"NotificationShortLookView" Any`
+    t =     1.67s     Requesting snapshot of accessibility hierarchy for app with pid 993
+    t =     1.74s Swipe up "NotificationShortLookView" Any
+    t =     1.75s     Wait for com.apple.springboard to idle
+    t =     2.99s     Find the "NotificationShortLookView" Any
+    t =     3.00s         Requesting snapshot of accessibility hierarchy for app with pid 993
+    t =     3.05s     Check for interrupting elements affecting "NotificationShortLookView" BannerNotification
+    t =     3.06s         Wait for com.blacklabel.marketing to idle
+    t =     3.06s         Requesting snapshot of accessibility hierarchy for app with pid 12921
+    t =     3.13s         Find: Descendants matching predicate identifier == "NotificationShortLookView" OR elementType == 7
+    t =     3.14s         Requesting snapshot of accessibility hierarchy for app with pid 993
+    t =     3.19s         Find: Descendants matching predicate identifier == "NotificationShortLookView" OR elementType == 7
+    t =     3.23s Failed to construct element query matching interruption. Interrupting element BannerNotification, {{8.0, 56.0}, {377.0, 105.7}}, identifier: 'NotificationShortLookView', foreground application Application 'com.apple.springboard', element application: (null). If your test failed after this unhandled interruption, please file a bug and attach your .xcresult bundle.
+    t =     3.26s     Synthesize event
+    t =     3.64s     Wait for com.apple.springboard to idle
+    t =     4.55s Requesting snapshot of accessibility hierarchy for app with pid 12921
+    t =     4.74s Requesting snapshot of accessibility hierarchy for app with pid 12921
+    t =     4.78s Added attachment named 'marketing-physical-home-accessibility'
+    t =     4.78s Find the Application 'com.blacklabel.marketing'
+    t =     4.78s     Requesting snapshot of accessibility hierarchy for app with pid 12921
+    t =     4.94s Added attachment named 'marketing-physical-home'
+PHONE_CHECKPOINT marketing-physical-home
+Attributes: Application, 0x108ba5e00, pid: 12921, label: 'Black Label Marketing'
+Element subtree:
+ →Application, 0x108ba5e00, pid: 12921, label: 'Black Label Marketing'
+    Window (Main), 0x108ba61c0, {{0.0, 0.0}, {393.0, 852.0}}
+      Other, 0x108ba4c80, {{0.0, 0.0}, {393.0, 852.0}}
+        Other, 0x108ba4dc0, {{0.0, 0.0}, {393.0, 852.0}}
+          Other, 0x108ba4f00, {{0.0, 0.0}, {393.0, 852.0}}
+            Other, 0x108ba5040, {{0.0, 0.0}, {393.0, 852.0}}
+              ScrollView, 0x108ba57c0, {{0.0, 0.0}, {393.0, 852.0}}
+                Other, 0x108ba5180, {{0.0, 0.0}, {393.0, 852.0}}
+                  Other, 0x108ba5680, {{0.0, 0.0}, {393.0, 79.0}}
+                Other, 0x108ba5a40, {{0.0, 0.0}, {393.0, 852.0}}
+                Other, 0x108ba5900, {{0.0, 59.0}, {393.0, 867.3}}
+                  Image, 0x108ba5540, {{150.7, 125.0}, {92.0, 92.0}}, label: 'BLBMark'
+                  StaticText, 0x108ba6440, {{52.5, 235.0}, {633.5, 31.3}}, label: 'Black Label Marketing'
+                  StaticText, 0x108ba6580, {{46.5, 271.3}, {300.0, 31.3}}, label: 'Promo reels, landing pages, email, and leads — from your own brand.'
+                  Button, 0x108ba6800, {{42.0, 324.7}, {152.7, 31.7}}, label: 'Sign in'
+                  Button, 0x108ba6d00, {{221.9, 332.7}, {105.7, 15.7}}, label: 'Create account'
+                  Button, 0x108ba6a80, {{38.0, 378.3}, {317.0, 44.0}}, label: 'Sign in with Apple'
+                  Button, 0x108ba6940, {{37.5, 431.8}, {318.0, 45.0}}, label: 'Continue with Google'
+                    Other, 0x108ba6080, {{53.0, 445.3}, {18.0, 18.0}}
+                    StaticText, 0x108ba66c0, {{120.0, 445.8}, {153.0, 17.0}}, label: 'Continue with Google'
+                  StaticText, 0x108ba6bc0, {{190.5, 494.3}, {12.0, 13.3}}, label: 'or'
+                  StaticText, 0x108ba6e40, {{38.0, 525.7}, {37.7, 12.0}}, label: 'EMAIL'
+                  TextField, 0x108ba6f80, {{50.0, 552.7}, {293.0, 22.0}}, identifier: 'field.email', label: 'Email', placeholderValue: 'you@company.com'
+                  StaticText, 0x108ba5f40, {{38.0, 596.7}, {68.0, 12.0}}, label: 'PASSWORD'
+                  TextField, 0x108ba7200, {{50.0, 623.7}, {293.0, 22.0}}, identifier: 'field.password', label: 'Password', placeholderValue: '••••••••'
+                  Button, 0x108ba7480, {{39.7, 668.5}, {193.7, 14.3}}, label: 'Remember me on this device'
+                    Image, 0x108ba5cc0, {{39.7, 669.0}, {13.3, 13.3}}, identifier: 'square', label: 'Square'
+                    StaticText, 0x108ba5b80, {{62.7, 668.5}, {170.7, 14.3}}, label: 'Remember me on this device'
+                  Button, 0x108ba7980, {{37.6, 695.3}, {317.8, 39.1}}, identifier: 'button.sign-in', label: 'Sign in'
+                    Image, 0x108ba7840, {{163.3, 709.7}, {12.7, 10.7}}, identifier: 'arrow.right', label: 'Right'
+                    StaticText, 0x108ba7700, {{183.5, 706.7}, {48.0, 16.3}}, label: 'Sign in'
+                  Button, 0x108ba7c00, {{140.5, 746.0}, {112.0, 14.3}}, label: 'Continue as guest'
+                  StaticText, 0x108ba70c0, {{159.7, 778.3}, {73.7, 13.3}}, label: 'just looking?'
+                  Button, 0x108ba4280, {{37.4, 797.1}, {318.2, 45.2}}, label: 'Explore with sample data'
+                    Image, 0x108ba7d40, {{97.3, 812.0}, {13.0, 15.3}}, identifier: 'sparkles', label: 'Sparkle'
+                    StaticText, 0x108ba43c0, {{119.7, 811.2}, {177.3, 17.0}}, label: 'Explore with sample data'
+                  StaticText, 0x108ba75c0, {{101.7, 847.7}, {189.7, 12.7}}, label: 'No account needed · nothing is sent'
+Path to element:
+ →Application, 0x108ba5e00, pid: 12921, label: 'Black Label Marketing'
+Query chain:
+ →Find: Application 'com.blacklabel.marketing'
+  Output: {
+    Application, 0x108ba4a00, pid: 12921, label: 'Black Label Marketing'
+  }
+
+    t =     4.94s Waiting 8.0s for "Explore with sample data" Button to exist
+    t =     5.97s     Checking `Expect predicate `existsNoRetry == 1` for object "Explore with sample data" Button`
+    t =     5.97s         Checking existence of `"Explore with sample data" Button`
+    t =     5.98s             Requesting snapshot of accessibility hierarchy for app with pid 12921
+    t =     6.02s Tap "Explore with sample data" Button
+    t =     6.02s     Wait for com.blacklabel.marketing to idle
+    t =     6.03s     Find the "Explore with sample data" Button
+    t =     6.03s         Requesting snapshot of accessibility hierarchy for app with pid 12921
+    t =     6.07s     Check for interrupting elements affecting "Explore with sample data" Button
+    t =     6.10s         Requesting snapshot of accessibility hierarchy for app with pid 12921
+    t =     6.12s         Find: Descendants matching predicate identifier == "NotificationShortLookView" OR elementType == 7
+    t =     6.13s     Synthesize event
+    t =     6.45s     Wait for com.blacklabel.marketing to idle
+    t =     6.75s Waiting 25.0s for "More" Button to exist
+    t =     7.76s     Checking `Expect predicate `existsNoRetry == 1` for object "More" Button`
+    t =     7.76s         Checking existence of `"More" Button`
+    t =     7.77s             Requesting snapshot of accessibility hierarchy for app with pid 12921
+    t =     7.91s Tap "More" Button
+    t =     7.91s     Wait for com.blacklabel.marketing to idle
+    t =     7.91s     Find the "More" Button
+    t =     7.92s         Requesting snapshot of accessibility hierarchy for app with pid 12921
+    t =     7.99s     Check for interrupting elements affecting "ellipsis.circle.fill" Button
+    t =     8.00s         Requesting snapshot of accessibility hierarchy for app with pid 12921
+    t =     8.06s         Find: Descendants matching predicate identifier == "NotificationShortLookView" OR elementType == 7
+    t =     8.07s     Synthesize event
+    t =     8.36s     Wait for com.blacklabel.marketing to idle
+    t =     9.70s Checking existence of `"NotificationShortLookView" Any`
+    t =     9.71s     Requesting snapshot of accessibility hierarchy for app with pid 993
+    t =     9.78s Requesting snapshot of accessibility hierarchy for app with pid 12921
+    t =    10.30s Requesting snapshot of accessibility hierarchy for app with pid 12921
+    t =    10.40s Added attachment named 'marketing-physical-more-accessibility'
+    t =    10.40s Find the Application 'com.blacklabel.marketing'
+    t =    10.40s     Requesting snapshot of accessibility hierarchy for app with pid 12921
+    t =    10.55s Added attachment named 'marketing-physical-more'
+PHONE_CHECKPOINT marketing-physical-more
+Attributes: Application, 0x113da66c0, pid: 12921, label: 'Black Label Marketing'
+Element subtree:
+ →Application, 0x113da66c0, pid: 12921, label: 'Black Label Marketing'
+    Window (Main), 0x113da6800, {{0.0, 0.0}, {393.0, 852.0}}
+      Other, 0x113da6f80, {{0.0, 0.0}, {393.0, 852.0}}
+      Other, 0x113da7340, {{0.0, 0.0}, {393.0, 852.0}}
+        Other, 0x113da6300, {{0.0, 0.0}, {393.0, 852.0}}
+          Other, 0x113da6440, {{0.0, 0.0}, {393.0, 852.0}}
+            Other, 0x113da6580, {{0.0, 0.0}, {393.0, 852.0}}
+              Other, 0x113da4f00, {{0.0, 0.0}, {393.0, 852.0}}
+                Other, 0x113da5040, {{0.0, 0.0}, {393.0, 852.0}}
+                  Other, 0x113da5400, {{0.0, 0.0}, {393.0, 852.0}}
+                    Other, 0x113da5540, {{0.0, 0.0}, {393.0, 852.0}}
+                      Other, 0x113da5180, {{0.0, 0.0}, {393.0, 852.0}}
+                        Other, 0x113da52c0, {{0.0, 0.0}, {393.0, 852.0}}
+                          Other, 0x113da4c80, {{0.0, 0.0}, {393.0, 852.0}}
+                            NavigationBar, 0x113da4dc0, {{0.0, 59.0}, {393.0, 54.0}}, identifier: 'More'
+                              StaticText, 0x113da48c0, {{172.3, 69.3}, {48.0, 23.3}}, label: 'More'
+                              Other, 0x113da4a00, {{337.0, 63.0}, {36.0, 36.0}}
+                                Other, 0x113da4b40, {{337.0, 63.0}, {36.0, 36.0}}
+                                  Button, 0x113da4500, {{338.0, 63.0}, {34.0, 36.0}}, identifier: 'magnifyingglass', label: 'Search'
+                            Other, 0x113da4640, {{0.0, 0.0}, {393.0, 852.0}}
+                              Other, 0x113da7e80, {{0.0, 0.0}, {393.0, 852.0}}
+                                Other, 0x113da7d40, {{0.0, 0.0}, {393.0, 852.0}}
+                                  Other, 0x113da7c00, {{0.0, 0.0}, {393.0, 852.0}}
+                                    CollectionView, 0x113da7ac0, {{0.0, 0.0}, {393.0, 852.0}}
+                                      Other, 0x113da7980, {{-16.0, -1591.0}, {425.0, 2052.3}}
+                                      Other, 0x113da7840, {{0.0, 0.0}, {393.0, 852.0}}
+                                        Other, 0x113da7700, {{0.0, 0.0}, {393.0, 133.0}}
+                                        Other, 0x113da75c0, {{0.0, 739.0}, {393.0, 113.0}}
+                                      Other, 0x113da7480, {{0.0, 0.0}, {393.0, 852.0}}
+                                      Cell, 0x113da7200, {{16.0, 113.0}, {361.0, 34.7}}
+                                        Other, 0x113da70c0, {{16.0, 113.0}, {361.0, 34.7}}
+                                        Other, 0x113da6d00, {{16.0, 113.0}, {361.0, 34.7}}
+                                          Other, 0x113da6e40, {{16.0, 113.0}, {361.0, 34.7}}
+                                            Other, 0x113da6940, {{16.0, 113.0}, {361.0, 34.7}}
+                                              StaticText, 0x113da6bc0, {{16.0, 113.0}, {361.0, 34.7}}, label: 'OVERVIEW'
+                                      Cell, 0x113da6a80, {{16.0, 147.7}, {361.0, 74.0}}
+                                        Other, 0x113da5680, {{16.0, 147.7}, {361.0, 74.0}}
+                                          Other, 0x113da5f40, {{16.0, 147.7}, {361.0, 74.0}}
+                                            Other, 0x113da6080, {{16.0, 147.7}, {361.0, 74.0}}
+                                              Other, 0x113da61c0, {{16.0, 147.7}, {361.0, 74.0}}
+                                        Other, 0x113da5e00, {{16.0, 147.7}, {361.0, 74.0}}
+                                          Other, 0x113da57c0, {{16.0, 147.7}, {361.0, 74.0}}
+                                            Other, 0x113da5900, {{16.0, 147.7}, {361.0, 74.0}}
+                                              Button, 0x113da5a40, {{16.0, 147.7}, {361.0, 74.0}}, label: 'Dashboard'
+                                                Image, 0x113da5b80, {{40.7, 177.3}, {15.0, 15.0}}, identifier: 'chart.pie.fill', label: 'Chart Pie'
+                                                StaticText, 0x113da5cc0, {{77.0, 175.0}, {87.3, 19.3}}, label: 'Dashboard'
+                                                Image, 0x113da4780, {{352.7, 178.7}, {7.7, 12.3}}, identifier: 'chevron.right', label: 'Forward'
+                                      Cell, 0x10bf6cb40, {{16.0, 221.7}, {361.0, 74.0}}
+                                        Other, 0x10bf6ca00, {{16.0, 221.7}, {361.0, 74.0}}
+                                          Other, 0x10bf6c8c0, {{16.0, 221.7}, {361.0, 74.0}}
+                                            Other, 0x10bf6cc80, {{16.0, 221.7}, {361.0, 74.0}}
+                                              Other, 0x10bf6d180, {{16.0, 221.7}, {361.0, 74.0}}
+                                        Other, 0x10bf6d040, {{16.0, 221.7}, {361.0, 74.0}}
+                                          Other, 0x10bf6c140, {{16.0, 221.7}, {361.0, 74.0}}
+                                            Other, 0x10bf6cf00, {{16.0, 221.7}, {361.0, 74.0}}
+                                              Button, 0x10bf6cdc0, {{16.0, 221.7}, {361.0, 74.0}}, label: 'Marketing OS'
+                                                Image, 0x10bf6c640, {{39.7, 251.7}, {17.0, 14.0}}, identifier: 'point.3.connected.trianglepath.dotted', label: 'Three Connected Points With A Dotted Triangular Path'
+                                                StaticText, 0x10bf6c280, {{77.0, 249.0}, {107.7, 19.3}}, label: 'Marketing OS'
+                                                Image, 0x10bf6c780, {{352.7, 252.7}, {7.7, 12.3}}, identifier: 'chevron.right', label: 'Forward'
+                                      Other, 0x10bf6c000, {{77.0, 220.7}, {284.0, 1.0}}
+                                      Cell, 0x10bf6c500, {{16.0, 295.7}, {361.0, 74.0}}
+                                        Other, 0x10bf6c3c0, {{16.0, 295.7}, {361.0, 74.0}}
+                                          Other, 0x10bf73700, {{16.0, 295.7}, {361.0, 74.0}}
+                                            Other, 0x10bf73d40, {{16.0, 295.7}, {361.0, 74.0}}
+                                              Other, 0x10bf73e80, {{16.0, 295.7}, {361.0, 74.0}}
+                                        Other, 0x10bf72080, {{16.0, 295.7}, {361.0, 74.0}}
+                                          Other, 0x10bf721c0, {{16.0, 295.7}, {361.0, 74.0}}
+                                            Other, 0x10bf73480, {{16.0, 295.7}, {361.0, 74.0}}
+                                              Button, 0x10bf72940, {{16.0, 295.7}, {361.0, 74.0}}, label: 'Connectors'
+                                                Image, 0x10bf72300, {{40.7, 325.3}, {15.0, 15.0}}, identifier: 'link.circle.fill', label: 'Link'
+                                                StaticText, 0x10bf72440, {{77.0, 323.0}, {93.7, 19.3}}, label: 'Connectors'
+                                                Image, 0x10bf72580, {{352.7, 326.7}, {7.7, 12.3}}, identifier: 'chevron.right', label: 'Forward'
+                                      Other, 0x10bf726c0, {{77.0, 294.7}, {284.0, 1.0}}
+                                      Cell, 0x10bf730c0, {{16.0, 369.7}, {361.0, 74.0}}
+                                        Other, 0x10bf73340, {{16.0, 369.7}, {361.0, 74.0}}
+                                          Other, 0x10bf72a80, {{16.0, 369.7}, {361.0, 74.0}}
+                                            Other, 0x10bf72800, {{16.0, 369.7}, {361.0, 74.0}}
+                                              Other, 0x10bf72d00, {{16.0, 369.7}, {361.0, 74.0}}
+                                        Other, 0x10bf72f80, {{16.0, 369.7}, {361.0, 74.0}}
+                                          Other, 0x10bf72bc0, {{16.0, 369.7}, {361.0, 74.0}}
+                                            Other, 0x10bf73c00, {{16.0, 369.7}, {361.0, 74.0}}
+                                              Button, 0x10bf73ac0, {{16.0, 369.7}, {361.0, 74.0}}, label: 'AI Ideation'
+                                                Image, 0x10bf72e40, {{41.0, 398.7}, {14.0, 16.3}}, identifier: 'sparkles', label: 'Sparkle'
+                                                StaticText, 0x10bf73840, {{77.0, 397.0}, {86.0, 19.3}}, label: 'AI Ideation'
+                                                Image, 0x10bf735c0, {{352.7, 400.7}, {7.7, 12.3}}, identifier: 'chevron.right', label: 'Forward'
+                                      Other, 0x10bf73200, {{77.0, 368.7}, {284.0, 1.0}}
+                                      Other, 0x10bf73980, {{-16.0, 461.3}, {425.0, 1906.7}}
+                                      Cell, 0x108ba75c0, {{16.0, 461.3}, {361.0, 34.7}}
+                                        Other, 0x108ba7d40, {{16.0, 461.3}, {361.0, 34.7}}
+                                        Other, 0x108ba4280, {{16.0, 461.3}, {361.0, 34.7}}
+                                          Other, 0x108ba4dc0, {{16.0, 461.3}, {361.0, 34.7}}
+                                            Other, 0x108ba5040, {{16.0, 461.3}, {361.0, 34.7}}
+                                              StaticText, 0x108ba5e00, {{16.0, 461.3}, {361.0, 34.7}}, label: 'ACCOUNT'
+                                      Cell, 0x108ba4c80, {{16.0, 496.0}, {361.0, 74.0}}
+                                        Other, 0x108ba61c0, {{16.0, 496.0}, {361.0, 74.0}}
+                                          Other, 0x108ba5900, {{16.0, 496.0}, {361.0, 74.0}}
+                                            Other, 0x108ba57c0, {{16.0, 496.0}, {361.0, 74.0}}
+                                              Other, 0x108ba4f00, {{16.0, 496.0}, {361.0, 74.0}}
+                                        Other, 0x108ba43c0, {{16.0, 496.0}, {361.0, 74.0}}
+                                          Other, 0x10bfe9180, {{16.0, 496.0}, {361.0, 74.0}}
+                                            Other, 0x10bfe92c0, {{16.0, 496.0}, {361.0, 74.0}}
+                                              Button, 0x10bfe8f00, {{16.0, 496.0}, {361.0, 74.0}}, label: 'Security Log'
+                                                Image, 0x10bfe9040, {{42.0, 526.0}, {12.3, 14.3}}, identifier: 'lock.shield.fill', label: 'Padlock In A Shield, Filled'
+                                                StaticText, 0x10bfe9540, {{77.0, 523.3}, {100.3, 19.3}}, label: 'Security Log'
+                                                Image, 0x10bfe9400, {{352.7, 527.0}, {7.7, 12.3}}, identifier: 'chevron.right', label: 'Forward'
+                                      Cell, 0x10bfeb980, {{16.0, 570.0}, {361.0, 74.0}}
+                                        Other, 0x10bfebac0, {{16.0, 570.0}, {361.0, 74.0}}
+                                          Other, 0x10bfe9680, {{16.0, 570.0}, {361.0, 74.0}}
+                                            Other, 0x10bfe9b80, {{16.0, 570.0}, {361.0, 74.0}}
+                                              Other, 0x10bfebc00, {{16.0, 570.0}, {361.0, 74.0}}
+                                        Other, 0x10bfeb840, {{16.0, 570.0}, {361.0, 74.0}}
+                                          Other, 0x10bfe9f40, {{16.0, 570.0}, {361.0, 74.0}}
+                                            Other, 0x10bfea080, {{16.0, 570.0}, {361.0, 74.0}}
+                                              Button, 0x10bfea1c0, {{16.0, 570.0}, {361.0, 74.0}}, label: 'Settings'
+                                                Image, 0x10bfeb700, {{40.3, 599.3}, {15.7, 15.7}}, identifier: 'gearshape.fill', label: 'Gear Shape, Filled'
+                                                StaticText, 0x10bfea6c0, {{77.0, 597.3}, {67.7, 19.3}}, label: 'Settings'
+                                                Image, 0x10bfeb5c0, {{352.7, 601.0}, {7.7, 12.3}}, identifier: 'chevron.right', label: 'Forward'
+                                      Other, 0x10bfea800, {{77.0, 569.0}, {284.0, 1.0}}
+                                      Other, 0x10bfebd40, {{360.0, 113.0}, {30.0, 656.0}}, label: 'Vertical scroll bar, 1 page', value: 0%
+                                        Other, 0x10bfea440, {{387.0, 759.0}, {3.0, 7.0}}
+                                      Other, 0x10bfe9a40, {{360.0, 113.0}, {30.0, 656.0}}, label: 'Vertical scroll bar, 1 page', value: 0%
+                                        Other, 0x10bfea580, {{387.0, 759.0}, {3.0, 7.0}}
+                            Toolbar, 0x10bfea300, {{0.0, 0.0}, {393.0, 852.0}}, identifier: 'Toolbar', label: 'Toolbar'
+                              Other, 0x10bfe9cc0, {{0.0, 0.0}, {393.0, 852.0}}
+                Other, 0x10bfe9e00, {{0.0, 0.0}, {393.0, 852.0}}
+                  Other, 0x10bfe97c0, {{0.0, 769.0}, {393.0, 83.0}}
+                    Other, 0x10bfebe80, {{0.0, 0.0}, {393.0, 852.0}}
+                      TabBar, 0x10bfe9900, {{0.0, 769.0}, {393.0, 83.0}}, label: 'Tab Bar'
+                        Other, 0x10bfeae40, {{21.0, 769.0}, {351.0, 62.0}}
+                          Other, 0x10bfeb340, {{21.0, 769.0}, {82.4, 54.0}}
+                          Other, 0x10bfeb480, {{21.0, 769.0}, {351.0, 62.0}}
+                            Button, 0x10bfeaa80, {{25.0, 773.0}, {82.4, 54.0}}, identifier: 'chart.pie.fill', label: 'Home'
+                              Image, 0x10bfeabc0, {{52.3, 779.3}, {28.0, 27.7}}, identifier: 'chart.pie.fill', label: 'chart pie'
+                            Button, 0x10bfeb200, {{87.4, 773.0}, {82.4, 54.0}}, identifier: 'wand.and.stars', label: 'Create'
+                              Image, 0x10bfea940, {{114.0, 778.3}, {29.0, 27.7}}, identifier: 'wand.and.sparkles', label: 'Magic wand with sparkles'
+                            Button, 0x10bfead00, {{149.7, 773.0}, {93.5, 54.0}}, identifier: 'megaphone.fill', label: 'Distribute'
+                              Image, 0x10bfeaf80, {{180.4, 778.3}, {32.3, 29.0}}, identifier: 'megaphone.fill', label: 'Megaphone, filled'
+                            Button, 0x10bfeb0c0, {{223.3, 773.0}, {82.4, 54.0}}, identifier: 'chart.line.uptrend.xyaxis', label: 'Grow'
+                              Image, 0x10bfe0000, {{248.9, 779.7}, {31.3, 26.3}}, identifier: 'chart.line.uptrend.xyaxis', label: 'chart line'
+                            Button, 0x10bfe0140, {{285.6, 773.0}, {82.4, 54.0}}, identifier: 'ellipsis.circle.fill', label: 'More', Selected
+                              Image, 0x10bfe0280, {{313.0, 778.7}, {28.0, 28.0}}, identifier: 'ellipsis.circle.fill', label: 'More'
+                          Other, 0x10bfe03c0, {{21.0, 769.0}, {351.0, 62.0}}
+                          Other, 0x10bfe0500, {{285.6, 773.0}, {82.4, 54.0}}
+                            Other, 0x10bfe0640, {{285.6, 773.0}, {82.3, 54.0}}
+                              Other, 0x10bfe0780, {{285.6, 773.0}, {82.3, 54.0}}
+                              Other, 0x10bfe08c0, {{285.6, 773.0}, {82.3, 54.0}}
+                                Other, 0x10bfe0a00, {{285.6, 773.0}, {82.3, 54.0}}
+                                  Other, 0x10bfe0b40, {{285.6, 773.0}, {82.3, 54.0}}
+                                    Other, 0x10bfe0c80, {{285.6, 773.0}, {82.3, 54.0}}
+                                  Other, 0x10bfe0dc0, {{285.6, 773.0}, {82.3, 54.0}}
+                                Other, 0x10bfe0f00, {{285.6, 773.0}, {82.3, 54.0}}
+                    Other, 0x10bfe1040, {{0.0, 769.0}, {393.0, 83.0}}
+                      Other, 0x10bfe1180, {{0.0, 769.0}, {393.0, 83.0}}
+                        Other, 0x10bfe12c0, {{0.0, 769.0}, {393.0, 83.0}}
+                          Other, 0x10bfe1400, {{0.0, 769.0}, {393.0, 83.0}}
+                            Other, 0x10bfe1540, {{0.0, 769.0}, {393.0, 83.0}}
+                              Other, 0x10bfe1680, {{0.0, 769.0}, {393.0, 83.0}}
+                          Other, 0x10bfe17c0, {{0.0, 769.0}, {393.0, 83.0}}
+                            Other, 0x10bfe1900, {{0.0, 769.0}, {393.0, 83.0}}
+Path to element:
+ →Application, 0x113da66c0, pid: 12921, label: 'Black Label Marketing'
+Query chain:
+ →Find: Application 'com.blacklabel.marketing'
+  Output: {
+    Application, 0x10bfe1a40, pid: 12921, label: 'Black Label Marketing'
+  }
+
+    t =    10.55s Checking existence of `Any (First Match)`
+    t =    10.55s     Requesting snapshot of accessibility hierarchy for app with pid 12921
+    t =    10.62s Find the Any (First Match)
+    t =    10.62s     Requesting snapshot of accessibility hierarchy for app with pid 12921
+    t =    10.71s Waiting 12.0s for "Connectors" Button to exist
+    t =    11.72s     Checking `Expect predicate `existsNoRetry == 1` for object "Connectors" Button`
+    t =    11.72s         Checking existence of `"Connectors" Button`
+    t =    11.73s             Requesting snapshot of accessibility hierarchy for app with pid 12921
+    t =    11.83s Tap "Connectors" Button
+    t =    11.83s     Wait for com.blacklabel.marketing to idle
+    t =    11.83s     Find the "Connectors" Button
+    t =    11.83s         Requesting snapshot of accessibility hierarchy for app with pid 12921
+    t =    11.92s     Check for interrupting elements affecting "Connectors" Button
+    t =    11.93s         Requesting snapshot of accessibility hierarchy for app with pid 12921
+    t =    11.99s         Find: Descendants matching predicate identifier == "NotificationShortLookView" OR elementType == 7
+    t =    12.03s     Synthesize event
+    t =    12.33s     Wait for com.blacklabel.marketing to idle
+    t =    13.11s Waiting 15.0s for "Connections" StaticText to exist
+    t =    14.12s     Checking `Expect predicate `existsNoRetry == 1` for object "Connections" StaticText`
+    t =    14.12s         Checking existence of `"Connections" StaticText`
+    t =    14.13s             Requesting snapshot of accessibility hierarchy for app with pid 12921
+    t =    14.44s Checking existence of `"NotificationShortLookView" Any`
+    t =    14.44s     Requesting snapshot of accessibility hierarchy for app with pid 993
+    t =    14.53s Requesting snapshot of accessibility hierarchy for app with pid 12921
+    t =    15.49s Requesting snapshot of accessibility hierarchy for app with pid 12921
+    t =    15.80s Added attachment named 'marketing-physical-connectors-accessibility'
+    t =    15.80s Find the Application 'com.blacklabel.marketing'
+    t =    15.80s     Requesting snapshot of accessibility hierarchy for app with pid 12921
+    t =    16.15s Added attachment named 'marketing-physical-connectors'
+PHONE_CHECKPOINT marketing-physical-connectors
+Attributes: Application, 0x11446d400, pid: 12921, label: 'Black Label Marketing'
+Element subtree:
+ →Application, 0x11446d400, pid: 12921, label: 'Black Label Marketing'
+    Window (Main), 0x11446fe80, {{0.0, 0.0}, {393.0, 852.0}}
+      Other, 0x11446f700, {{0.0, 0.0}, {393.0, 852.0}}
+      Other, 0x11446f840, {{0.0, 0.0}, {393.0, 852.0}}
+        Other, 0x11446fd40, {{0.0, 0.0}, {393.0, 852.0}}
+          Other, 0x11446fc00, {{0.0, 0.0}, {393.0, 852.0}}
+            Other, 0x11446fac0, {{0.0, 0.0}, {393.0, 852.0}}
+              Other, 0x11446f980, {{0.0, 0.0}, {393.0, 852.0}}
+                Other, 0x11446e1c0, {{0.0, 0.0}, {393.0, 852.0}}
+                  Other, 0x11446e300, {{0.0, 0.0}, {393.0, 852.0}}
+                    Other, 0x11446e440, {{0.0, 0.0}, {393.0, 852.0}}
+                      Other, 0x11446f5c0, {{0.0, 0.0}, {393.0, 852.0}}
+                        Other, 0x11446f200, {{0.0, 0.0}, {393.0, 852.0}}
+                          Other, 0x11446f340, {{0.0, 0.0}, {393.0, 852.0}}
+                            NavigationBar, 0x11446f480, {{0.0, 59.0}, {393.0, 54.0}}, identifier: 'Connectors'
+                              Button, 0x11446ebc0, {{16.0, 59.0}, {44.0, 44.0}}, identifier: 'BackButton', label: 'More'
+                              StaticText, 0x11446f0c0, {{141.7, 69.3}, {109.3, 23.3}}, label: 'Connectors'
+                            Other, 0x11446ed00, {{0.0, 0.0}, {393.0, 852.0}}
+                              Other, 0x11446ef80, {{0.0, 0.0}, {393.0, 852.0}}
+                                Other, 0x11446ee40, {{0.0, 0.0}, {393.0, 852.0}}
+                                  Other, 0x11446e580, {{0.0, 0.0}, {393.0, 852.0}}
+                                    ScrollView, 0x11446e6c0, {{0.0, 0.0}, {393.7, 852.0}}
+                                      Other, 0x11446e800, {{0.0, 0.0}, {393.7, 852.0}}
+                                        Other, 0x11446ea80, {{0.0, 0.0}, {393.7, 133.0}}
+                                        Other, 0x11446e940, {{0.0, 739.0}, {393.7, 113.0}}
+                                      Other, 0x11446d7c0, {{0.0, 0.0}, {393.7, 852.0}}
+                                        Other, 0x11446d900, {{0.0, 739.0}, {393.7, 113.0}}
+                                      Other, 0x11446da40, {{0.0, 113.0}, {393.8, 12326.0}}
+                                        StaticText, 0x11446de00, {{27.7, 141.0}, {337.3, 77.7}}, label: 'Every sign-in and integration in one place — your account, mailboxes, social, newsletters, and data sources. Every integration runs on your own provider accounts, and nothing is transmitted to any of them until you allow it under Data sharing.'
+                                        Image, 0x11446e080, {{54.2, 261.7}, {11.0, 14.3}}, identifier: 'hand.raised.fill', label: 'Block'
+                                        StaticText, 0x11446df40, {{83.7, 255.3}, {109.7, 26.7}}, label: 'Data sharing'
+                                        StaticText, 0x11446dcc0, {{45.7, 296.7}, {301.7, 68.7}}, label: 'This app sends nothing to anyone until you say so, per service. Read what leaves this Mac, then allow the ones you want to use. Withdraw any of them at any time and the next send is refused — not queued, not silently dropped.'
+                                        StaticText, 0x11446db80, {{55.7, 404.5}, {62.7, 15.0}}, label: 'Sendblue'
+                                        StaticText, 0x11446d540, {{135.3, 405.7}, {67.0, 12.7}}, label: 'Not allowed'
+                                        Button, 0x11446d680, {{257.7, 386.8}, {80.3, 50.3}}, identifier: 'button.allow', label: 'Allow', Selected
+                                          StaticText, 0x1144c4000, {{295.7, 396.3}, {26.0, 31.3}}, label: 'Allow'
+                                          Image, 0x1144c4140, {{274.8, 405.0}, {14.3, 14.3}}, identifier: 'checkmark.seal', label: 'Verified', Selected
+                                        StaticText, 0x1144c4280, {{55.7, 441.7}, {276.3, 52.7}}, label: 'The recipient's phone number, your sending line, the full text of every message, and any media URL you attach — plus your Sendblue API key id and secret to authenticate.'
+                                        StaticText, 0x1144c43c0, {{55.7, 499.3}, {165.0, 14.7}}, label: 'Sent to: api.sendblue.com'
+                                        StaticText, 0x1144c4500, {{55.7, 555.7}, {10.0, 15.0}}, label: 'X'
+                                        StaticText, 0x1144c4640, {{82.7, 556.8}, {67.0, 12.7}}, label: 'Not allowed'
+                                        Button, 0x1144c4780, {{246.3, 545.5}, {92.0, 35.3}}, identifier: 'button.allow', label: 'Allow', Selected
+                                          Image, 0x1144c48c0, {{263.5, 556.0}, {14.3, 14.3}}, identifier: 'checkmark.seal', label: 'Verified', Selected
+                                          StaticText, 0x1144c4a00, {{284.3, 555.3}, {37.3, 15.7}}, label: 'Allow'
+                                        StaticText, 0x1144c4b40, {{55.7, 585.3}, {270.3, 26.3}}, label: 'The post text or caption you wrote, any image or video file attached to it, and your X access token.'
+                                        StaticText, 0x1144c4c80, {{55.7, 616.7}, {251.0, 14.7}}, label: 'Sent to: api.x.com, upload.twitter.com'
+                                        StaticText, 0x1144c4dc0, {{55.7, 680.5}, {56.7, 15.0}}, label: 'LinkedIn'
+                                        StaticText, 0x1144c4f00, {{129.3, 681.7}, {67.0, 12.7}}, label: 'Not allowed'
+                                        Button, 0x1144c5040, {{257.7, 662.8}, {80.3, 50.3}}, identifier: 'button.allow', label: 'Allow', Selected
+                                          StaticText, 0x1144c5180, {{295.7, 672.3}, {26.0, 31.3}}, label: 'Allow'
+                                          Image, 0x1144c52c0, {{274.8, 681.0}, {14.3, 14.3}}, identifier: 'checkmark.seal', label: 'Verified', Selected
+                                        StaticText, 0x1144c5400, {{55.7, 717.7}, {274.7, 39.7}}, label: 'The post text or caption you wrote, any image or video file attached to it, and your LinkedIn access token.'
+                                        StaticText, 0x1144c5540, {{55.7, 762.3}, {165.0, 14.7}}, label: 'Sent to: api.linkedin.com'
+                                        StaticText, 0x1144c5680, {{55.7, 826.2}, {64.3, 15.0}}, label: 'Facebook'
+                                        StaticText, 0x1144c57c0, {{137.0, 827.3}, {67.0, 12.7}}, label: 'Not allowed'
+                                        Button, 0x1144c5900, {{257.7, 808.5}, {80.3, 50.3}}, identifier: 'button.allow', label: 'Allow', Selected
+                                          StaticText, 0x1144c5a40, {{295.7, 818.0}, {26.0, 31.3}}, label: 'Allow'
+                                          Image, 0x1144c5b80, {{274.8, 826.7}, {14.3, 14.3}}, identifier: 'checkmark.seal', label: 'Verified', Selected
+                                        StaticText, 0x1144c5cc0, {{55.7, 863.3}, {281.3, 39.7}}, label: 'The post text or caption you wrote, any image or video file attached to it, and your Facebook access token.'
+                                        StaticText, 0x1144c5e00, {{55.7, 908.0}, {178.3, 14.7}}, label: 'Sent to: graph.facebook.com'
+                                        StaticText, 0x1144c5f40, {{55.7, 971.8}, {68.0, 15.0}}, label: 'Instagram'
+                                        StaticText, 0x1144c6080, {{140.7, 973.0}, {67.0, 12.7}}, label: 'Not allowed'
+                                        Button, 0x1144c61c0, {{257.7, 954.2}, {80.3, 50.3}}, identifier: 'button.allow', label: 'Allow', Selected
+                                          StaticText, 0x1144c6300, {{295.7, 963.7}, {26.0, 31.3}}, label: 'Allow'
+                                          Image, 0x1144c6440, {{274.8, 972.3}, {14.3, 14.3}}, identifier: 'checkmark.seal', label: 'Verified', Selected
+                                        StaticText, 0x1144c6580, {{55.7, 1009.0}, {282.0, 39.7}}, label: 'The post text or caption you wrote, any image or video file attached to it, and your Instagram access token.'
+                                        StaticText, 0x1144c66c0, {{55.7, 1053.7}, {191.7, 29.3}}, label: 'Sent to: graph.facebook.com, graph.instagram.com'
+                                        StaticText, 0x1144c6800, {{55.7, 1132.2}, {54.7, 15.0}}, label: 'Threads'
+                                        StaticText, 0x1144c6940, {{127.3, 1133.3}, {67.0, 12.7}}, label: 'Not allowed'
+                                        Button, 0x1144c6a80, {{257.7, 1114.5}, {80.3, 50.3}}, identifier: 'button.allow', label: 'Allow', Selected
+                                          StaticText, 0x1144c6bc0, {{295.7, 1124.0}, {26.0, 31.3}}, label: 'Allow'
+                                          Image, 0x1144c6d00, {{274.8, 1132.7}, {14.3, 14.3}}, identifier: 'checkmark.seal', label: 'Verified', Selected
+                                        StaticText, 0x1144c6e40, {{55.7, 1169.3}, {273.0, 39.7}}, label: 'The post text or caption you wrote, any image or video file attached to it, and your Threads access token.'
+                                        StaticText, 0x1144c6f80, {{55.7, 1214.0}, {171.7, 14.7}}, label: 'Sent to: graph.threads.net'
+                                        StaticText, 0x1144c70c0, {{55.7, 1270.0}, {57.3, 15.0}}, label: 'YouTube'
+                                        StaticText, 0x1144c7200, {{130.0, 1271.2}, {46.0, 12.7}}, label: 'Allowed'
+                                        Button, 0x1144c7340, {{220.0, 1260.2}, {118.3, 34.7}}, identifier: 'button.withdraw', label: 'Withdraw'
+                                          Image, 0x1144c7480, {{237.5, 1271.0}, {13.0, 13.0}}, identifier: 'xmark.circle', label: 'Close'
+                                          StaticText, 0x1144c75c0, {{257.3, 1269.7}, {64.3, 15.7}}, label: 'Withdraw'
+                                        StaticText, 0x1144c7700, {{55.7, 1299.3}, {274.7, 39.7}}, label: 'The post text or caption you wrote, any image or video file attached to it, and your YouTube access token.'
+                                        StaticText, 0x1144c7840, {{55.7, 1344.0}, {178.3, 14.7}}, label: 'Sent to: www.googleapis.com'
+                                        StaticText, 0x1144c7980, {{55.7, 1407.8}, {43.3, 15.0}}, label: 'TikTok'
+                                        StaticText, 0x1144c7ac0, {{116.0, 1409.0}, {67.0, 12.7}}, label: 'Not allowed'
+                                        Button, 0x1144c7c00, {{257.7, 1390.2}, {80.3, 50.3}}, identifier: 'button.allow', label: 'Allow', Selected
+                                          StaticText, 0x1144c7d40, {{295.7, 1399.7}, {26.0, 31.3}}, label: 'Allow'
+                                          Image, 0x1144c7e80, {{274.8, 1408.3}, {14.3, 14.3}}, identifier: 'checkmark.seal', label: 'Verified', Selected
+                                        StaticText, 0x1144c8000, {{55.7, 1445.0}, {267.3, 39.7}}, label: 'The post text or caption you wrote, any image or video file attached to it, and your TikTok access token.'
+                                        StaticText, 0x1144c8140, {{55.7, 1489.7}, {185.0, 14.7}}, label: 'Sent to: open.tiktokapis.com'
+                                        StaticText, 0x1144c8280, {{55.7, 1553.5}, {61.7, 15.0}}, label: 'Pinterest'
+                                        StaticText, 0x1144c83c0, {{134.3, 1554.7}, {67.0, 12.7}}, label: 'Not allowed'
+                                        Button, 0x1144c8500, {{257.7, 1535.8}, {80.3, 50.3}}, identifier: 'button.allow', label: 'Allow', Selected
+                                          StaticText, 0x1144c8640, {{295.7, 1545.3}, {26.0, 31.3}}, label: 'Allow'
+                                          Image, 0x1144c8780, {{274.8, 1554.0}, {14.3, 14.3}}, identifier: 'checkmark.seal', label: 'Verified', Selected
+                                        StaticText, 0x1144c88c0, {{55.7, 1590.7}, {278.0, 39.7}}, label: 'The post text or caption you wrote, any image or video file attached to it, and your Pinterest access token.'
+                                        StaticText, 0x1144c8a00, {{55.7, 1635.3}, {171.7, 14.7}}, label: 'Sent to: api.pinterest.com'
+                                        StaticText, 0x1144c8b40, {{55.7, 1699.2}, {62.0, 15.0}}, label: 'Hunter.io'
+                                        StaticText, 0x1144c8c80, {{134.7, 1700.3}, {67.0, 12.7}}, label: 'Not allowed'
+                                        Button, 0x1144c8dc0, {{257.7, 1681.5}, {80.3, 50.3}}, identifier: 'button.allow', label: 'Allow', Selected
+                                          StaticText, 0x1144c8f00, {{295.7, 1691.0}, {26.0, 31.3}}, label: 'Allow'
+                                          Image, 0x1144c9040, {{274.8, 1699.7}, {14.3, 14.3}}, identifier: 'checkmark.seal', label: 'Verified', Selected
+                                        StaticText, 0x1144c9180, {{55.7, 1736.3}, {282.0, 52.7}}, label: 'The contact's first and last name and their company domain — the two fields the finder needs — plus your Hunter.io API key. No other lead field is sent.'
+                                        StaticText, 0x1144c92c0, {{55.7, 1794.0}, {145.3, 14.7}}, label: 'Sent to: api.hunter.io'
+                                        StaticText, 0x1144c9400, {{55.7, 1857.8}, {43.0, 15.0}}, label: 'Apollo'
+                                        StaticText, 0x1144c9540, {{115.7, 1859.0}, {67.0, 12.7}}, label: 'Not allowed'
+                                        Button, 0x1144c9680, {{257.7, 1840.2}, {80.3, 50.3}}, identifier: 'button.allow', label: 'Allow', Selected
+                                          StaticText, 0x1144c97c0, {{295.7, 1849.7}, {26.0, 31.3}}, label: 'Allow'
+                                          Image, 0x1144c9900, {{274.8, 1858.3}, {14.3, 14.3}}, identifier: 'checkmark.seal', label: 'Verified', Selected
+                                        StaticText, 0x1144c9a40, {{55.7, 1895.0}, {281.7, 52.7}}, label: 'The contact's first and last name and their company domain — the two fields the finder needs — plus your Apollo API key. No other lead field is sent.'
+                                        StaticText, 0x1144c9b80, {{55.7, 1952.7}, {145.3, 14.7}}, label: 'Sent to: api.apollo.io'
+                                        StaticText, 0x1144c9cc0, {{55.7, 2016.5}, {55.0, 15.0}}, label: 'Prospeo'
+                                        StaticText, 0x1144c9e00, {{127.7, 2017.7}, {67.0, 12.7}}, label: 'Not allowed'
+                                        Button, 0x1144c9f40, {{257.7, 1998.8}, {80.3, 50.3}}, identifier: 'button.allow', label: 'Allow', Selected
+                                          StaticText, 0x1144ca080, {{295.7, 2008.3}, {26.0, 31.3}}, label: 'Allow'
+                                          Image, 0x1144ca1c0, {{274.8, 2017.0}, {14.3, 14.3}}, identifier: 'checkmark.seal', label: 'Verified', Selected
+                                        StaticText, 0x1144ca300, {{55.7, 2053.7}, {281.7, 52.7}}, label: 'The contact's first and last name and their company domain — the two fields the finder needs — plus your Prospeo API key. No other lead field is sent.'
+                                        StaticText, 0x1144ca440, {{55.7, 2111.3}, {152.0, 14.7}}, label: 'Sent to: api.prospeo.io'
+                                        StaticText, 0x1144ca580, {{55.7, 2175.2}, {58.3, 15.0}}, label: 'HubSpot'
+                                        StaticText, 0x1144ca6c0, {{131.0, 2176.3}, {67.0, 12.7}}, label: 'Not allowed'
+                                        Button, 0x1144ca800, {{257.7, 2157.5}, {80.3, 50.3}}, identifier: 'button.allow', label: 'Allow', Selected
+                                          StaticText, 0x1144ca940, {{295.7, 2167.0}, {26.0, 31.3}}, label: 'Allow'
+                                          Image, 0x1144caa80, {{274.8, 2175.7}, {14.3, 14.3}}, identifier: 'checkmark.seal', label: 'Verified', Selected
+                                        StaticText, 0x1144cabc0, {{55.7, 2212.3}, {276.0, 39.7}}, label: 'The lead record you push: name, email, phone, company, and your notes on that lead — plus your HubSpot access token.'
+                                        StaticText, 0x1144cad00, {{55.7, 2257.0}, {152.0, 14.7}}, label: 'Sent to: api.hubapi.com'
+                                        StaticText, 0x1144cae40, {{55.7, 2320.8}, {72.0, 15.0}}, label: 'Salesforce'
+                                        StaticText, 0x1144caf80, {{144.7, 2322.0}, {67.0, 12.7}}, label: 'Not allowed'
+                                        Button, 0x1144cb0c0, {{257.7, 2303.2}, {80.3, 50.3}}, identifier: 'button.allow', label: 'Allow', Selected
+                                          StaticText, 0x1144cb200, {{295.7, 2312.7}, {26.0, 31.3}}, label: 'Allow'
+                                          Image, 0x1144cb340, {{274.8, 2321.3}, {14.3, 14.3}}, identifier: 'checkmark.seal', label: 'Verified', Selected
+                                        StaticText, 0x1144cb480, {{55.7, 2358.0}, {276.0, 39.7}}, label: 'The lead record you push: name, email, phone, company, and your notes on that lead — plus your Salesforce access token.'
+                                        StaticText, 0x1144cb5c0, {{55.7, 2402.7}, {152.0, 14.7}}, label: 'Sent to: salesforce.com'
+                                        StaticText, 0x1144cb700, {{55.7, 2466.5}, {63.0, 15.0}}, label: 'Pipedrive'
+                                        StaticText, 0x1144cb840, {{135.7, 2467.7}, {67.0, 12.7}}, label: 'Not allowed'
+                                        Button, 0x1144cb980, {{257.7, 2448.8}, {80.3, 50.3}}, identifier: 'button.allow', label: 'Allow', Selected
+                                          StaticText, 0x1144cbac0, {{295.7, 2458.3}, {26.0, 31.3}}, label: 'Allow'
+                                          Image, 0x1144cbc00, {{274.8, 2467.0}, {14.3, 14.3}}, identifier: 'checkmark.seal', label: 'Verified', Selected
+                                        StaticText, 0x1144cbd40, {{55.7, 2503.7}, {276.0, 39.7}}, label: 'The lead record you push: name, email, phone, company, and your notes on that lead — plus your Pipedrive access token.'
+                                        StaticText, 0x1144cbe80, {{55.7, 2548.3}, {145.3, 14.7}}, label: 'Sent to: pipedrive.com'
+                                        StaticText, 0x1144cc000, {{55.7, 2612.2}, {53.0, 15.0}}, label: 'Bluesky'
+                                        StaticText, 0x1144cc140, {{125.7, 2613.3}, {67.0, 12.7}}, label: 'Not allowed'
+                                        Button, 0x1144cc280, {{257.7, 2594.5}, {80.3, 50.3}}, identifier: 'button.allow', label: 'Allow', Selected
+                                          StaticText, 0x1144cc3c0, {{295.7, 2604.0}, {26.0, 31.3}}, label: 'Allow'
+                                          Image, 0x1144cc500, {{274.8, 2612.7}, {14.3, 14.3}}, identifier: 'checkmark.seal', label: 'Verified', Selected
+                                        StaticText, 0x1144cc640, {{55.7, 2649.3}, {282.0, 79.0}}, label: 'The post text you wrote and your Bluesky handle, plus the APP PASSWORD you issued in Bluesky's own settings — never your account password. The app password is exchanged for a short-lived session token per publish and is not stored on their side by this app.'
+                                        StaticText, 0x1144cc780, {{55.7, 2733.3}, {132.0, 14.7}}, label: 'Sent to: bsky.social'
+                                        StaticText, 0x1144cc8c0, {{55.7, 2797.2}, {66.3, 15.0}}, label: 'Mastodon'
+                                        StaticText, 0x1144cca00, {{139.0, 2798.3}, {67.0, 12.7}}, label: 'Not allowed'
+                                        Button, 0x1144ccb40, {{257.7, 2779.5}, {80.3, 50.3}}, identifier: 'button.allow', label: 'Allow', Selected
+                                          StaticText, 0x1144ccc80, {{295.7, 2789.0}, {26.0, 31.3}}, label: 'Allow'
+                                          Image, 0x1144ccdc0, {{274.8, 2797.7}, {14.3, 14.3}}, identifier: 'checkmark.seal', label: 'Verified', Selected
+                                        StaticText, 0x1144ccf00, {{55.7, 2834.3}, {275.0, 79.0}}, label: 'The post text you wrote and the access token you issued yourself in your instance's Preferences → Development. It goes ONLY to the instance host you entered — Mastodon is federated, so there is no central server and this app never picks one for you.'
+                                        StaticText, 0x1144cd040, {{55.7, 2918.3}, {204.7, 14.7}}, label: 'Sent to: your Mastodon instance'
+                                        StaticText, 0x1144cd180, {{55.7, 2982.2}, {51.3, 15.0}}, label: 'Discord'
+                                        StaticText, 0x1144cd2c0, {{124.0, 2983.3}, {67.0, 12.7}}, label: 'Not allowed'
+                                        Button, 0x1144cd400, {{257.7, 2964.5}, {80.3, 50.3}}, identifier: 'button.allow', label: 'Allow', Selected
+                                          StaticText, 0x1144cd540, {{295.7, 2974.0}, {26.0, 31.3}}, label: 'Allow'
+                                          Image, 0x1144cd680, {{274.8, 2982.7}, {14.3, 14.3}}, identifier: 'checkmark.seal', label: 'Verified', Selected
+                                        StaticText, 0x1144cd7c0, {{55.7, 3019.3}, {273.3, 65.7}}, label: 'The message text you wrote, posted to the webhook URL you created in your own server's channel settings. The URL itself IS the credential, so it is stored like one and never written to a log. No token, no lead, and no file is sent.'
+                                        StaticText, 0x1144cd900, {{55.7, 3090.0}, {237.7, 14.7}}, label: 'Sent to: discord.com, discordapp.com'
+                                        StaticText, 0x1144cda40, {{55.7, 3136.7}, {77.0, 74.7}}, label: 'OpenStreetMap Overpass (overpass-api.de)'
+                                        StaticText, 0x1144cdb80, {{149.7, 3167.7}, {67.0, 12.7}}, label: 'Not allowed'
+                                        Button, 0x1144cdcc0, {{257.7, 3148.8}, {80.3, 50.3}}, identifier: 'button.allow', label: 'Allow', Selected
+                                          StaticText, 0x1144cde00, {{295.7, 3158.3}, {26.0, 31.3}}, label: 'Allow'
+                                          Image, 0x1144cdf40, {{274.8, 3167.0}, {14.3, 14.3}}, identifier: 'checkmark.seal', label: 'Verified', Selected
+                                        StaticText, 0x1144ce080, {{55.7, 3216.3}, {282.0, 131.3}}, label: 'The business search you run: the industry you picked, the map bounding box of the metro you chose from this app's built-in city list — never your device's location — and, when you type a business name, the letters and digits of that name. This operator is a volunteer public map service, so it also sees your IP address and this app's user-agent. No API key is sent (the service is keyless) and none of your leads, contacts, messages or files are ever included.'
+                                        StaticText, 0x1144ce1c0, {{55.7, 3352.7}, {158.7, 14.7}}, label: 'Sent to: overpass-api.de'
+                                        StaticText, 0x1144ce300, {{55.7, 3399.3}, {80.0, 74.7}}, label: 'Overpass mirror (overpass.private.coffee)'
+                                        StaticText, 0x1144ce440, {{152.7, 3430.3}, {67.0, 12.7}}, label: 'Not allowed'
+                                        Button, 0x1144ce580, {{257.7, 3411.5}, {80.3, 50.3}}, identifier: 'button.allow', label: 'Allow', Selected
+                                          StaticText, 0x1144ce6c0, {{295.7, 3421.0}, {26.0, 31.3}}, label: 'Allow'
+                                          Image, 0x1144ce800, {{274.8, 3429.3}, {14.3, 14.3}}, identifier: 'checkmark.seal', label: 'Verified', Selected
+                                        StaticText, 0x1144ce940, {{55.7, 3479.0}, {282.0, 131.3}}, label: 'The business search you run: the industry you picked, the map bounding box of the metro you chose from this app's built-in city list — never your device's location — and, when you type a business name, the letters and digits of that name. This operator is a volunteer public map service, so it also sees your IP address and this app's user-agent. No API key is sent (the service is keyless) and none of your leads, contacts, messages or files are ever included.'
+                                        StaticText, 0x1144cea80, {{55.7, 3615.3}, {211.3, 14.7}}, label: 'Sent to: overpass.private.coffee'
+                                        StaticText, 0x1144cebc0, {{55.7, 3664.2}, {54.3, 45.0}}, label: 'Google Search Console'
+                                        StaticText, 0x1144ced00, {{127.0, 3680.3}, {67.0, 12.7}}, label: 'Not allowed'
+                                        Button, 0x1144cee40, {{257.7, 3661.5}, {80.3, 50.3}}, identifier: 'button.allow', label: 'Allow', Selected
+                                          StaticText, 0x1144cef80, {{295.7, 3671.0}, {26.0, 31.3}}, label: 'Allow'
+                                          Image, 0x1144cf0c0, {{274.8, 3679.3}, {14.3, 14.3}}, identifier: 'checkmark.seal', label: 'Verified', Selected
+                                        StaticText, 0x1144cf200, {{55.7, 3716.3}, {266.7, 79.0}}, label: 'The exact Search Console property you picked (your site's URL prefix or sc-domain: name), the date ranges you ask about, and your Google access token. Google returns your own search-performance rows; no lead, contact, message or file is ever sent.'
+                                        StaticText, 0x1144cf340, {{55.7, 3800.3}, {178.3, 14.7}}, label: 'Sent to: www.googleapis.com'
+                                        StaticText, 0x1144cf480, {{55.7, 3856.7}, {81.7, 30.0}}, label: 'Black Label lead catalog'
+                                        StaticText, 0x1144cf5c0, {{154.3, 3865.3}, {67.0, 12.7}}, label: 'Not allowed'
+                                        Button, 0x1144cf700, {{257.7, 3846.5}, {80.3, 50.3}}, identifier: 'button.allow', label: 'Allow', Selected
+                                          StaticText, 0x1144cf840, {{295.7, 3856.0}, {26.0, 31.3}}, label: 'Allow'
+                                          Image, 0x1144cf980, {{274.8, 3864.3}, {14.3, 14.3}}, identifier: 'checkmark.seal', label: 'Verified', Selected
+                                        StaticText, 0x1144cfac0, {{55.7, 3901.3}, {274.7, 39.7}}, label: 'Your catalog search terms (query, industry, state) and your subscription key. Your own leads, contacts and messages are never uploaded to it.'
+                                        StaticText, 0x1144cfc00, {{55.7, 3946.0}, {270.7, 43.7}}, label: 'Sent to: blacklabel-leads-api.michael-070.workers.dev (operated by Black Label)'
+                                        Image, 0x1144cfd40, {{53.2, 4061.0}, {13.0, 13.0}}, identifier: 'link.circle.fill', label: 'Link'
+                                        StaticText, 0x1144cfe80, {{83.7, 4054.3}, {109.7, 26.7}}, label: 'Connections'
+                                        StaticText, 0x1144d4000, {{45.7, 4095.7}, {282.3, 39.7}}, label: 'Connect only the channels you use. Saved settings stay neutral until a real provider check succeeds; every connection has one clear next step.'
+                                        SegmentedControl, 0x1144d4140, {{45.5, 4145.3}, {302.7, 31.0}}
+                                          Button, 0x1144d4280, {{45.7, 4145.3}, {75.0, 32.0}}, label: 'All', Selected
+                                          Button, 0x1144d43c0, {{120.7, 4145.3}, {76.0, 32.0}}, label: 'Email'
+                                          Button, 0x1144d4500, {{196.7, 4145.3}, {75.0, 32.0}}, label: 'Social'
+                                          Button, 0x1144d4640, {{271.7, 4145.3}, {77.0, 32.0}}, label: 'Data & CRM'
+                                        Image, 0x1144d4780, {{57.2, 4199.0}, {20.0, 20.0}}, identifier: 'paperplane.fill', label: 'Send'
+                                        StaticText, 0x1144d48c0, {{88.7, 4197.3}, {37.3, 15.7}}, label: 'Email'
+                                        StaticText, 0x1144d4a00, {{88.7, 4216.0}, {75.7, 75.3}}, label: 'Add a sending mailbox; reply detection and Cloudflare routing are optional.'
+                                        StaticText, 0x1144d4b40, {{201.3, 4200.3}, {46.7, 37.7}}, label: 'Not connected'
+                                        Button, 0x1144d4c80, {{266.8, 4196.9}, {70.8, 119.5}}, identifier: 'button.manage', label: 'Manage'
+                                          StaticText, 0x1144d4dc0, {{306.3, 4208.3}, {12.7, 96.7}}, label: 'Manage'
+                                          Image, 0x1144d4f00, {{286.2, 4250.0}, {13.3, 13.3}}, identifier: 'arrow.right.circle', label: 'Arrow Right Circle'
+                                        Image, 0x1144d5040, {{57.2, 4349.7}, {20.7, 17.7}}, identifier: 'antenna.radiowaves.left.and.right', label: 'Cellular Data'
+                                        StaticText, 0x1144d5180, {{88.7, 4348.0}, {62.7, 31.3}}, label: 'Social channels'
+                                        StaticText, 0x1144d52c0, {{201.3, 4351.0}, {46.7, 37.7}}, label: 'Not connected'
+                                        StaticText, 0x1144d5400, {{88.7, 4382.3}, {72.7, 88.0}}, label: 'Link the channels you publish to; profile-only links remain clearly labeled.'
+                                        Button, 0x1144d5540, {{266.8, 4347.6}, {70.8, 119.5}}, identifier: 'button.manage', label: 'Manage'
+                                          StaticText, 0x1144d5680, {{306.3, 4359.0}, {12.7, 96.7}}, label: 'Manage'
+                                          Image, 0x1144d57c0, {{286.2, 4400.7}, {13.3, 13.3}}, identifier: 'arrow.right.circle', label: 'Arrow Right Circle'
+                                        Image, 0x1144d5900, {{56.8, 4504.0}, {21.7, 17.7}}, identifier: 'chart.bar.xaxis', label: 'Bar Chart With An X Axis'
+                                        StaticText, 0x1144d5a40, {{88.7, 4502.3}, {44.7, 31.3}}, label: 'Data & CRM'
+                                        StaticText, 0x1144d5b80, {{201.3, 4505.3}, {46.7, 37.7}}, label: 'Not connected'
+                                        StaticText, 0x1144d5cc0, {{88.7, 4536.7}, {73.3, 125.3}}, label: 'Lead Database, CRM, enrichment, and analytics are optional. Each stays neutral until its live test passes.'
+                                        Button, 0x1144d5e00, {{266.8, 4501.9}, {70.8, 119.5}}, identifier: 'button.manage', label: 'Manage'
+                                          StaticText, 0x1144d5f40, {{306.3, 4513.3}, {12.7, 96.7}}, label: 'Manage'
+                                          Image, 0x1144d6080, {{286.2, 4555.0}, {13.3, 13.3}}, identifier: 'arrow.right.circle', label: 'Arrow Right Circle'
+                                        Image, 0x1144d61c0, {{52.8, 4734.3}, {13.0, 13.0}}, identifier: 'paperplane.fill', label: 'Send'
+                                        StaticText, 0x1144d6300, {{83.7, 4727.7}, {256.7, 26.7}}, label: 'Mailboxes — sending (SMTP)'
+                                        StaticText, 0x1144d6440, {{45.7, 4769.0}, {302.3, 65.7}}, label: 'Your own email accounts. Every real send (sequences, journeys, spotlights) goes from a mailbox you add here over encrypted SMTP — port 465 (SSL) or port 587 (STARTTLS), whichever your provider offers. App passwords are stored only in your Mac's Keychain.'
+                                        Image, 0x1144d6580, {{59.8, 4872.7}, {23.0, 16.7}}, identifier: 'envelope.fill', label: 'Get Mail'
+                                        StaticText, 0x1144d66c0, {{94.3, 4858.7}, {114.3, 31.3}}, label: 'Primary mailbox — not set up'
+                                        StaticText, 0x1144d6800, {{243.7, 4874.5}, {83.3, 12.7}}, label: 'Not connected'
+                                        StaticText, 0x1144d6940, {{94.3, 4891.0}, {73.0, 12.0}}, label: 'No SMTP host'
+                                        Button, 0x1144d6a80, {{57.0, 4918.2}, {96.3, 34.7}}, identifier: 'button.set-up', label: 'Set up'
+                                          Image, 0x1144d6bc0, {{74.8, 4929.7}, {12.0, 12.0}}, identifier: 'pencil', label: 'Edit'
+                                          StaticText, 0x1144d6d00, {{94.3, 4927.8}, {42.7, 15.7}}, label: 'Set up'
+                                        Button, 0x1144d6e40, {{160.3, 4910.5}, {133.3, 50.3}}, identifier: 'button.test-connection', label: 'Test connection', Disabled
+                                          StaticText, 0x1144d6f80, {{202.3, 4920.0}, {74.7, 31.3}}, label: 'Test connection', Disabled
+                                          Image, 0x1144d70c0, {{177.5, 4931.3}, {18.0, 8.7}}, identifier: 'bolt.horizontal', label: 'Disconnect', Disabled
+                                        Button, 0x1144d7200, {{45.0, 4983.8}, {147.3, 34.7}}, identifier: 'button.add-a-mailbox', label: 'Add a mailbox'
+                                          Image, 0x1144d7340, {{62.5, 4994.7}, {13.0, 13.0}}, identifier: 'plus.circle', label: 'Add'
+                                          StaticText, 0x1144d7480, {{82.7, 4993.3}, {93.0, 15.7}}, label: 'Add a mailbox'
+                                        Image, 0x1144d75c0, {{52.5, 5091.3}, {14.3, 14.3}}, identifier: 'checkmark.seal.fill', label: 'Verified', Selected
+                                        StaticText, 0x1144d7700, {{83.7, 5072.0}, {187.7, 53.3}}, label: 'Mailboxes — sending (provider API)'
+                                        StaticText, 0x1144d7840, {{45.7, 5139.3}, {295.3, 92.0}}, label: 'Connect a mailbox over the provider's REAL API instead of SMTP: you authorize on Google's or Microsoft's own consent screen and every send calls the Gmail API / Microsoft Graph with your token — no app-password. Paste your own OAuth client ID, then Connect. The chip turns Connected only after a live API check returns 200.'
+                                        Image, 0x1144d7980, {{59.8, 5267.7}, {27.0, 19.7}}, identifier: 'envelope.badge.fill', label: 'Mark Unread'
+                                        StaticText, 0x1144d7ac0, {{94.7, 5255.3}, {103.0, 31.3}}, label: 'Gmail / Google Workspace'
+                                        StaticText, 0x1144d7c00, {{243.3, 5271.2}, {83.3, 12.7}}, label: 'Not connected'
+                                        StaticText, 0x1144d7d40, {{94.7, 5287.7}, {77.3, 12.0}}, label: 'Not connected'
+                                        StaticText, 0x1144d7e80, {{57.7, 5308.7}, {227.7, 24.0}}, label: 'GMAIL / GOOGLE WORKSPACE OAUTH CLIENT ID'
+                                        TextField, 0x1144d8000, {{69.5, 5347.7}, {254.3, 22.0}}, identifier: 'field.gmail---google-workspace-oauth-client-id', label: 'Gmail / Google Workspace OAuth client ID', placeholderValue: 'xxxxxxxx.apps.googleusercontent.com'
+                                        Button, 0x1144d8140, {{57.1, 5388.3}, {84.1, 103.5}}, identifier: 'button.save-client-id', label: 'Save client ID', Selected
+                                          StaticText, 0x1144d8280, {{97.0, 5399.7}, {26.0, 80.7}}, label: 'Save client ID'
+                                          Image, 0x1144d83c0, {{76.5, 5433.3}, {13.3, 13.3}}, identifier: 'checkmark.circle', label: 'Selected', Selected
+                                        Button, 0x1144d8500, {{150.4, 5404.3}, {87.1, 71.1}}, identifier: 'button.connect', label: 'Connect'
+                                          StaticText, 0x1144d8640, {{190.7, 5415.8}, {28.3, 48.3}}, label: 'Connect'
+                                          Image, 0x1144d8780, {{166.8, 5432.7}, {16.7, 14.3}}, identifier: 'person.crop.circle.badge.checkmark', label: 'Person Cropped In A Circle With A Checkmark Badge'
+                                        Button, 0x1144d88c0, {{246.3, 5414.8}, {86.3, 50.3}}, identifier: 'button.console', label: 'Console'
+                                          StaticText, 0x1144d8a00, {{281.7, 5424.3}, {34.3, 31.3}}, label: 'Console'
+                                          Image, 0x1144d8b40, {{264.5, 5435.0}, {10.0, 10.0}}, identifier: 'arrow.up.right', label: 'Up-Right Diagonal Arrow'
+                                        StaticText, 0x1144d8c80, {{57.7, 5500.3}, {273.3, 45.7}}, label: 'Register com.blacklabel.marketing:/oauth2redirect as a redirect URI in your Google Desktop app OAuth app — in the same console page where you created the client ID, under its redirect-URI settings.'
+                                        Image, 0x1144d8dc0, {{59.2, 5594.3}, {19.7, 19.7}}, identifier: 'envelope.circle.fill', label: 'Get Mail'
+                                        StaticText, 0x1144d8f00, {{89.7, 5582.0}, {97.7, 31.3}}, label: 'Outlook / Microsoft 365'
+                                        StaticText, 0x1144d9040, {{243.3, 5597.8}, {83.3, 12.7}}, label: 'Not connected'
+                                        StaticText, 0x1144d9180, {{89.7, 5614.3}, {77.3, 12.0}}, label: 'Not connected'
+                                        StaticText, 0x1144d92c0, {{57.7, 5635.3}, {276.0, 12.0}}, label: 'OUTLOOK / MICROSOFT 365 OAUTH CLIENT ID'
+                                        TextField, 0x1144d9400, {{69.5, 5662.3}, {254.3, 22.0}}, identifier: 'field.outlook---microsoft-365-oauth-client-id', label: 'Outlook / Microsoft 365 OAuth client ID', placeholderValue: 'Application (client) ID'
+                                        Button, 0x1144d9540, {{57.1, 5702.9}, {84.1, 103.5}}, identifier: 'button.save-client-id', label: 'Save client ID', Selected
+                                          StaticText, 0x1144d9680, {{97.0, 5714.3}, {26.0, 80.7}}, label: 'Save client ID'
+                                          Image, 0x1144d97c0, {{76.5, 5748.0}, {13.3, 13.3}}, identifier: 'checkmark.circle', label: 'Selected', Selected
+                                        Button, 0x1144d9900, {{150.4, 5719.3}, {87.1, 71.1}}, identifier: 'button.connect', label: 'Connect'
+                                          StaticText, 0x1144d9a40, {{190.7, 5730.5}, {28.3, 48.3}}, label: 'Connect'
+                                          Image, 0x1144d9b80, {{166.8, 5747.7}, {16.7, 14.3}}, identifier: 'person.crop.circle.badge.checkmark', label: 'Person Cropped In A Circle With A Checkmark Badge'
+                                        Button, 0x1144d9cc0, {{246.3, 5729.5}, {86.3, 50.3}}, identifier: 'button.console', label: 'Console'
+                                          StaticText, 0x1144d9e00, {{281.7, 5739.0}, {34.3, 31.3}}, label: 'Console'
+                                          Image, 0x1144d9f40, {{264.5, 5749.7}, {10.0, 10.0}}, identifier: 'arrow.up.right', label: 'Up-Right Diagonal Arrow'
+                                        StaticText, 0x1144da080, {{57.7, 5815.0}, {278.0, 45.7}}, label: 'Register com.blacklabel.marketing://oauth2redirect as a redirect URI in your Microsoft public-client OAuth app — in the same console page where you created the client ID, under its redirect-URI settings.'
+                                        Image, 0x1144da1c0, {{52.2, 5946.0}, {14.7, 15.0}}, identifier: 'tray.and.arrow.down.fill', label: 'Inbox'
+                                        StaticText, 0x1144da300, {{83.7, 5926.7}, {214.0, 53.3}}, label: 'Inbox — reply detection (IMAP)'
+                                        StaticText, 0x1144da440, {{45.7, 5994.0}, {192.3, 39.7}}, label: 'Read-only reply detection on your own mailbox — never sends, never deletes.'
+                                        StaticText, 0x1144da580, {{255.3, 6007.5}, {83.3, 12.7}}, label: 'Not connected'
+                                        Switch, 0x1144da6c0, {{45.7, 6045.7}, {302.2, 28.0}}, label: 'Enable reply detection', value: 0
+                                          StaticText, 0x1144da800, {{45.7, 6052.2}, {144.0, 15.0}}, label: 'Enable reply detection'
+                                          Switch, 0x1144da940, {{287.0, 6045.7}, {63.0, 28.0}}, value: 0
+                                        Image, 0x1144daa80, {{52.2, 6149.0}, {15.3, 10.7}}, identifier: 'cloud.fill', label: 'Mostly Cloudy'
+                                        StaticText, 0x1144dabc0, {{83.7, 6127.7}, {227.7, 53.3}}, label: 'Newsletters — Cloudflare send (optional/advanced)'
+                                        StaticText, 0x1144dad00, {{45.7, 6195.0}, {193.0, 105.3}}, label: 'Optional. Newsletters already send over your own mailbox with no setup — this is only for high-volume senders who'd rather route through their own Cloudflare Email Sending Worker. If that's not you, skip this and just Send from the Newsletters screen.'
+                                        StaticText, 0x1144dae40, {{255.7, 6241.3}, {83.3, 12.7}}, label: 'Not connected'
+                                        StaticText, 0x1144daf80, {{45.7, 6312.3}, {170.7, 12.0}}, label: 'WORKER ENDPOINT (HTTPS)'
+                                        TextField, 0x1144db0c0, {{57.5, 6339.3}, {278.7, 22.0}}, identifier: 'field.worker-endpoint--https-', label: 'Worker endpoint (https)', placeholderValue: 'https://newsletter.yourname.workers.dev/send'
+                                        StaticText, 0x1144db200, {{45.7, 6383.3}, {146.3, 36.0}}, label: 'FROM EMAIL (A DOMAIN ONBOARDED TO CF EMAIL SENDING)'
+                                        StaticText, 0x1144db340, {{202.0, 6395.3}, {72.3, 12.0}}, label: 'FROM NAME'
+                                        TextField, 0x1144db480, {{213.8, 6422.3}, {122.3, 22.0}}, identifier: 'field.from-name', label: 'From name', placeholderValue: 'Acme Studio'
+                                        TextField, 0x1144db5c0, {{57.5, 6434.3}, {122.3, 22.0}}, identifier: 'field.from-email--a-domain-onboarded-to-cf-email-sending-', label: 'From email (a domain onboarded to CF Email Sending)', placeholderValue: 'news@yourbrand.com'
+                                        StaticText, 0x1144db700, {{45.7, 6478.3}, {234.0, 26.7}}, label: 'SHARED SECRET (BEARER TOKEN; STORED IN KEYCHAIN)'
+                                        SecureTextField, 0x1144db840, {{54.5, 6520.0}, {284.7, 16.0}}, placeholderValue: 'Paste the token you set with wrangler secret put'
+                                        Switch, 0x1144db980, {{45.7, 6557.0}, {302.5, 30.0}}, label: 'Auto-send due newsletters through Cloudflare', value: 0
+                                          StaticText, 0x1144dbac0, {{45.7, 6557.0}, {177.7, 30.0}}, label: 'Auto-send due newsletters through Cloudflare'
+                                          Switch, 0x1144dbc00, {{287.3, 6558.0}, {63.0, 28.0}}, value: 0
+                                        StaticText, 0x1144dbd40, {{45.7, 6599.0}, {301.3, 48.0}}, label: 'When on, the app checks your saved newsletters on launch and periodically while running, and sends any that are due on their cadence through Cloudflare — to your own contacts.'
+                                        Button, 0x1144dbe80, {{45.1, 6658.6}, {136.5, 71.1}}, identifier: 'button.save-cloudflare-settings', label: 'Save Cloudflare settings', Selected
+                                          StaticText, 0x1144dc000, {{85.0, 6670.0}, {78.0, 48.3}}, label: 'Save Cloudflare settings'
+                                          Image, 0x1144dc140, {{64.5, 6687.7}, {13.3, 13.3}}, identifier: 'checkmark.circle', label: 'Selected', Selected
+                                        Button, 0x1144dc280, {{190.7, 6676.8}, {138.3, 34.7}}, identifier: 'button.deploy-guide', label: 'Deploy guide'
+                                          Image, 0x1144dc3c0, {{208.5, 6689.0}, {10.0, 10.0}}, identifier: 'arrow.up.right', label: 'Up-Right Diagonal Arrow'
+                                          StaticText, 0x1144dc500, {{225.7, 6686.3}, {86.7, 15.7}}, label: 'Deploy guide'
+                                        Image, 0x1144dc640, {{51.8, 6802.3}, {18.7, 15.3}}, identifier: 'message.badge.waveform.fill', label: 'Message Bubble With A Waveform Badge, Filled'
+                                        StaticText, 0x1144dc780, {{83.7, 6783.3}, {206.0, 53.3}}, label: 'Messaging — Sendblue (iMessage / RCS / SMS)'
+                                        StaticText, 0x1144dc8c0, {{45.7, 6850.7}, {175.0, 105.3}}, label: 'Text your own leads from your own Sendblue line. Sendblue routes iMessage → RCS → SMS per number; we never send from a Black Label number and never touch a shared list. Your key stays in this Mac's Keychain.'
+                                        StaticText, 0x1144dca00, {{255.7, 6897.0}, {83.3, 12.7}}, label: 'Not connected'
+                                        StaticText, 0x1144dcb40, {{45.7, 6966.0}, {123.7, 13.3}}, label: 'SENDBLUE API KEY ID'
+                                        SecureTextField, 0x1144dcc80, {{54.5, 6994.3}, {284.7, 16.0}}, placeholderValue: 'sb-api-key-id'
+                                        StaticText, 0x1144dcdc0, {{45.7, 7029.3}, {123.7, 13.3}}, label: 'SENDBLUE API SECRET'
+                                        SecureTextField, 0x1144dcf00, {{54.5, 7057.7}, {284.7, 16.0}}, placeholderValue: 'sb-api-secret-key'
+                                        StaticText, 0x1144dd040, {{45.7, 7092.7}, {132.7, 24.0}}, label: 'YOUR SENDBLUE LINE (OPTIONAL)'
+                                        StaticText, 0x1144dd180, {{201.8, 7092.7}, {140.0, 24.0}}, label: 'DAILY CAP PER LINE (0 = NONE)'
+                                        TextField, 0x1144dd2c0, {{57.5, 7131.7}, {122.3, 22.0}}, identifier: 'field.your-sendblue-line--optional-', label: 'Your Sendblue line (optional)', placeholderValue: '+15551234567'
+                                        TextField, 0x1144dd400, {{213.8, 7131.7}, {122.3, 22.0}}, identifier: 'field.daily-cap-per-line--0---none-', label: 'Daily cap per line (0 = none)', placeholderValue: '0'
+                                        Button, 0x1144dd540, {{45.1, 7173.3}, {98.8, 103.5}}, identifier: 'button.save-messaging-settings', label: 'Save messaging settings', Selected
+                                          StaticText, 0x1144dd680, {{85.0, 7184.7}, {40.7, 80.7}}, label: 'Save messaging settings'
+                                          Image, 0x1144dd7c0, {{64.5, 7218.3}, {13.3, 13.3}}, identifier: 'checkmark.circle', label: 'Selected', Selected
+                                        Button, 0x1144dd900, {{153.0, 7176.5}, {92.3, 97.0}}, identifier: 'button.verify-credential', label: 'Verify credential'
+                                          StaticText, 0x1144dda40, {{195.0, 7186.2}, {33.7, 77.7}}, label: 'Verify credential'
+                                          Image, 0x1144ddb80, {{170.2, 7220.7}, {18.0, 8.7}}, identifier: 'bolt.horizontal', label: 'Disconnect'
+                                        Button, 0x1144ddcc0, {{254.3, 7184.5}, {94.3, 81.0}}, identifier: 'button.sendblue-dashboard', label: 'Sendblue dashboard'
+                                          StaticText, 0x1144dde00, {{289.3, 7193.8}, {42.7, 62.3}}, label: 'Sendblue dashboard'
+                                          Image, 0x1144ddf40, {{272.2, 7220.0}, {10.0, 10.0}}, identifier: 'arrow.up.right', label: 'Up-Right Diagonal Arrow'
+                                        StaticText, 0x1144de080, {{45.7, 7286.3}, {302.3, 60.0}}, label: 'Compliance: texting is TCPA/10DLC territory. The app blocks any send without recorded prior express consent, blocks a number that replied STOP, and holds sends outside 8am–9pm local. Those gates run in the app regardless of what the provider allows.'
+                                        Image, 0x1144de1c0, {{52.2, 7408.7}, {14.7, 11.7}}, identifier: 'antenna.radiowaves.left.and.right', label: 'Cellular Data'
+                                        StaticText, 0x1144de300, {{83.7, 7401.0}, {132.0, 26.7}}, label: 'Social accounts'
+                                        StaticText, 0x1144de440, {{45.7, 7442.3}, {299.7, 39.7}}, label: 'Connect each network with its own OAuth — you authorize in your own account and the token is minted on this device.'
+                                        StaticText, 0x1144de580, {{45.7, 8784.0}, {288.3, 34.3}}, label: 'Connect opens each provider's authorization/setup path. A profile-only handle is not shown as Connected until a real token is stored.'
+                                        Image, 0x1144de6c0, {{52.2, 8880.7}, {14.7, 11.3}}, identifier: 'tray.full.fill', label: 'Inbox Full'
+                                        StaticText, 0x1144de800, {{83.7, 8873.0}, {124.7, 26.7}}, label: 'Lead Database'
+                                        StaticText, 0x1144de940, {{98.7, 8928.3}, {186.0, 19.3}}, label: 'Lead Database Access'
+                                        Image, 0x1144dea80, {{61.8, 8965.3}, {24.3, 19.0}}, identifier: 'tray.full.fill', label: 'Inbox Full'
+                                        StaticText, 0x1144debc0, {{98.7, 8949.7}, {227.3, 71.7}}, label: 'Search the live business catalog free with masked contacts. Subscribe to unlock full emails and phone numbers and add them straight to your campaigns.'
+                                        StaticText, 0x1144ded00, {{59.7, 9033.3}, {226.0, 31.3}}, label: '$29.99 per month · auto-renews until canceled'
+                                        StaticText, 0x1144dee40, {{59.7, 9076.7}, {270.7, 50.3}}, label: 'Before you subscribe: allow the Black Label lead catalog under Connectors → Data sharing. Until then this app refuses to contact the catalog, so a subscription could not unlock anything.'
+                                        Button, 0x1144def80, {{59.1, 9144.3}, {132.1, 39.1}}, identifier: 'button.subscribe', label: 'Subscribe', Disabled
+                                          Image, 0x1144df0c0, {{79.2, 9157.0}, {13.3, 13.3}}, identifier: 'lock.open.fill', label: 'Unlock', Disabled
+                                          StaticText, 0x1144df200, {{100.3, 9155.5}, {72.3, 16.3}}, label: 'Subscribe', Disabled
+                                        Button, 0x1144df340, {{200.3, 9138.5}, {122.0, 50.3}}, identifier: 'button.restore-purchases', label: 'Restore Purchases'
+                                          StaticText, 0x1144df480, {{235.7, 9148.0}, {70.0, 31.3}}, label: 'Restore Purchases'
+                                          Image, 0x1144df5c0, {{217.8, 9157.0}, {11.0, 13.3}}, identifier: 'arrow.clockwise', label: 'Refresh'
+                                        Link, 0x1144df700, {{59.5, 9200.3}, {80.7, 13.3}}, label: 'Privacy Policy'
+                                        Link, 0x1144df840, {{154.2, 9200.3}, {74.0, 13.3}}, label: 'Terms of Use'
+                                        Image, 0x1144df980, {{53.8, 9289.7}, {11.7, 11.7}}, identifier: 'square.grid.2x2.fill', label: 'Grid 2x2'
+                                        StaticText, 0x1144dfac0, {{83.7, 9282.3}, {161.3, 26.7}}, label: 'Other integrations'
+                                        Image, 0x1144dfc00, {{59.2, 9337.3}, {23.0, 15.3}}, identifier: 'cloud.fill', label: 'Mostly Cloudy'
+                                        StaticText, 0x1144dfd40, {{92.7, 9337.2}, {67.7, 15.7}}, label: 'CRM sync'
+                                        StaticText, 0x1144dfe80, {{243.3, 9338.7}, {83.3, 12.7}}, label: 'Not connected'
+                                        StaticText, 0x1144e4000, {{57.7, 9364.3}, {256.3, 37.7}}, label: 'Push a real saved lead into your own Salesforce, HubSpot, or Pipedrive account. The chip turns Connected only after a live 2xx CRM response.'
+                                        StaticText, 0x1144e4140, {{57.7, 9412.0}, {52.0, 13.3}}, label: 'PROVIDER'
+                                        Button, 0x1144e4280, {{61.2, 9431.3}, {173.0, 37.0}}, label: 'Not connected'
+                                          StaticText, 0x1144e43c0, {{73.3, 9438.3}, {130.3, 23.0}}, label: 'Not connected'
+                                        StaticText, 0x1144e4500, {{57.7, 9478.3}, {241.7, 25.3}}, label: 'Demo data will not be pushed to a real CRM. Connect your own workspace first.'
+                                        Image, 0x1144e4640, {{58.5, 9540.3}, {18.0, 18.0}}, identifier: 'phone.fill', label: 'Call'
+                                        StaticText, 0x1144e4780, {{87.7, 9541.5}, {71.0, 15.7}}, label: 'Telephony'
+                                        StaticText, 0x1144e48c0, {{265.3, 9543.0}, {62.3, 12.7}}, label: 'Connected'
+                                        StaticText, 0x1144e4a00, {{56.7, 9565.0}, {257.3, 25.3}}, label: 'System dialer active — click-to-call hands off to your Mac's calling app.'
+                                        Image, 0x1144e4b40, {{59.5, 9639.3}, {18.7, 18.7}}, identifier: 'sparkle.magnifyingglass', label: 'Sparkle In A Magnifying Glass'
+                                        StaticText, 0x1144e4c80, {{89.3, 9625.3}, {98.7, 46.7}}, label: 'Enrichment — find missing emails'
+                                        StaticText, 0x1144e4dc0, {{243.3, 9642.3}, {83.3, 12.7}}, label: 'Not connected'
+                                        StaticText, 0x1144e4f00, {{57.7, 9682.0}, {273.0, 50.3}}, label: 'Bring your OWN Hunter or Apollo API key. Look-ups run on your Mac against your provider account and attach only to the local lead — your lead list never touches our servers. Nothing is ever fabricated.'
+                                        StaticText, 0x1144e5040, {{57.7, 9742.3}, {52.0, 13.3}}, label: 'PROVIDER'
+                                        Button, 0x1144e5180, {{76.5, 9761.7}, {182.3, 59.0}}, label: 'No provider (in-house only)'
+                                          StaticText, 0x1144e52c0, {{88.7, 9768.7}, {139.3, 45.0}}, label: 'No provider (in-house only)'
+                                        StaticText, 0x1144e5400, {{57.7, 9821.7}, {244.7, 14.3}}, label: 'Waterfall — try your providers in order'
+                                        StaticText, 0x1144e5540, {{57.7, 9844.0}, {278.0, 60.0}}, label: 'Add your own provider keys and order them. Enrichment runs each provider in order until the first confirmed email, then stops — and caches the result on the lead so re-running is instant and free. Nothing is ever fabricated or proxied through us.'
+                                        StaticText, 0x1144e5680, {{57.7, 9912.0}, {262.7, 12.0}}, label: 'No providers in the waterfall yet — add one below.'
+                                        Button, 0x1144e57c0, {{67.8, 9936.0}, {68.2, 12.7}}, label: 'Hunter.io'
+                                          Image, 0x1144e5900, {{67.8, 9937.7}, {9.3, 9.3}}, identifier: 'plus', label: 'Add'
+                                          StaticText, 0x1144e5a40, {{82.7, 9936.0}, {53.3, 12.7}}, label: 'Hunter.io'
+                                        Button, 0x1144e5b80, {{163.2, 9936.0}, {51.8, 12.7}}, label: 'Apollo'
+                                          Image, 0x1144e5cc0, {{163.2, 9937.7}, {9.3, 9.3}}, identifier: 'plus', label: 'Add'
+                                          StaticText, 0x1144e5e00, {{178.0, 9936.0}, {37.0, 12.7}}, label: 'Apollo'
+                                        Button, 0x1144e5f40, {{242.2, 9936.0}, {61.8, 12.7}}, label: 'Prospeo'
+                                          Image, 0x1144e6080, {{242.2, 9937.7}, {9.3, 9.3}}, identifier: 'plus', label: 'Add'
+                                          StaticText, 0x1144e61c0, {{257.0, 9936.0}, {47.0, 12.7}}, label: 'Prospeo'
+                                        StaticText, 0x1144e6300, {{45.7, 9989.0}, {112.3, 13.3}}, label: 'ANALYTICS SOURCES'
+                                        Image, 0x1144e6440, {{58.5, 10033.7}, {15.7, 16.7}}, identifier: 'cloud.bolt.fill', label: 'Severe Thunderstorm'
+                                        StaticText, 0x1144e6580, {{82.7, 10026.3}, {75.7, 31.3}}, label: 'Cloudflare Analytics'
+                                        StaticText, 0x1144e66c0, {{243.3, 10035.7}, {83.3, 12.7}}, label: 'Not connected'
+                                        StaticText, 0x1144e6800, {{57.7, 10067.7}, {261.0, 60.0}}, label: 'Pull your site's real HTTP requests and page views straight from your own Cloudflare account over the GraphQL Analytics API. Create a scoped token (Analytics: Read) — the setup guide below walks through it.'
+                                        Button, 0x1144e6940, {{57.0, 10137.2}, {245.7, 34.7}}, identifier: 'button.open-cloudflare-setup-guide', label: 'Open Cloudflare setup guide'
+                                          Image, 0x1144e6a80, {{74.8, 10148.3}, {14.3, 12.3}}, identifier: 'book', label: 'Bookmark'
+                                          StaticText, 0x1144e6bc0, {{96.7, 10146.7}, {189.7, 15.7}}, label: 'Open Cloudflare setup guide'
+                                        StaticText, 0x1144e6d00, {{57.7, 10181.3}, {247.0, 13.3}}, label: 'CLOUDFLARE API TOKEN (ANALYTICS: READ)'
+                                        SecureTextField, 0x1144e6e40, {{66.5, 10209.7}, {260.3, 16.0}}, placeholderValue: 'Paste your scoped API token'
+                                        StaticText, 0x1144e6f80, {{57.7, 10244.7}, {75.3, 12.0}}, label: 'ACCOUNT ID'
+                                        StaticText, 0x1144e70c0, {{201.7, 10244.7}, {96.3, 12.0}}, label: 'ZONE (DOMAIN)'
+                                        TextField, 0x1144e7200, {{69.5, 10271.7}, {110.3, 22.0}}, identifier: 'field.account-id', label: 'Account ID', placeholderValue: '32-hex account ID'
+                                        TextField, 0x1144e7340, {{213.8, 10271.7}, {110.0, 22.0}}, identifier: 'field.zone--domain-', label: 'Zone (domain)', placeholderValue: 'yourbrand.com'
+                                        StaticText, 0x1144e7480, {{57.7, 10313.7}, {243.7, 24.0}}, label: 'WEB ANALYTICS SITE TAG (OPTIONAL — ENABLES PAGE VIEWS)'
+                                        TextField, 0x1144e75c0, {{69.5, 10352.7}, {254.3, 22.0}}, identifier: 'field.web-analytics-site-tag--optional---enables-page-views-', label: 'Web Analytics site tag (optional — enables page views)', placeholderValue: 'Paste your Web Analytics site tag'
+                                        Button, 0x1144e7700, {{57.1, 10394.3}, {91.1, 87.5}}, identifier: 'button.save-settings', label: 'Save settings', Selected
+                                          StaticText, 0x1144e7840, {{97.0, 10405.7}, {33.0, 64.7}}, label: 'Save settings'
+                                          Image, 0x1144e7980, {{76.5, 10431.3}, {13.3, 13.3}}, identifier: 'checkmark.circle', label: 'Selected', Selected
+                                        Button, 0x1144e7ac0, {{157.3, 10397.5}, {87.0, 81.3}}, identifier: 'button.test---refresh', label: 'Test / Refresh'
+                                          StaticText, 0x1144e7c00, {{199.3, 10406.8}, {28.3, 62.3}}, label: 'Test / Refresh'
+                                          Image, 0x1144e7d40, {{174.8, 10433.7}, {18.0, 8.7}}, identifier: 'bolt.horizontal', label: 'Disconnect'
+                                        Button, 0x1144e7e80, {{253.0, 10397.5}, {82.7, 81.3}}, identifier: 'button.setup-guide', label: 'Setup guide'
+                                          StaticText, 0x1144f0000, {{288.3, 10406.8}, {31.0, 62.3}}, label: 'Setup guide'
+                                          Image, 0x1144f0140, {{271.2, 10433.0}, {10.0, 10.0}}, identifier: 'arrow.up.right', label: 'Up-Right Diagonal Arrow'
+                                        StaticText, 0x1144f0280, {{45.7, 10505.3}, {302.0, 48.0}}, label: 'Cloudflare pulls REAL requests + page views from your own account (above). GA4 / Ads / Meta save your own IDs below and stay a configured source until you authorize each provider's API — never fabricated numbers.'
+                                        Image, 0x1144f03c0, {{71.2, 10591.0}, {13.0, 13.0}}, identifier: 'link.circle.fill', label: 'Link'
+                                        StaticText, 0x1144f0500, {{101.7, 10584.0}, {160.7, 26.7}}, label: 'Connect your data'
+                                        Image, 0x1144f0640, {{76.2, 10645.3}, {15.0, 13.3}}, identifier: 'chart.xyaxis.line', label: 'Xy Axis With A Trend Line'
+                                        StaticText, 0x1144f0780, {{101.0, 10636.3}, {78.0, 31.3}}, label: 'Google Analytics 4'
+                                        StaticText, 0x1144f08c0, {{230.7, 10639.3}, {79.0, 25.3}}, label: 'Live · verified read'
+                                        StaticText, 0x1144f0a00, {{74.7, 10676.7}, {239.0, 37.7}}, label: 'Two real GA4 reads compare this period with the immediately preceding period. No modeled or sample metrics.'
+                                        StaticText, 0x1144f0b40, {{74.7, 10723.3}, {244.0, 34.3}}, label: '1  Find your numeric Property ID in GA Admin   ·   2  connect your Google Desktop OAuth client   ·   3  verify the live read'
+                                        StaticText, 0x1144f0c80, {{74.7, 10766.7}, {79.3, 24.0}}, label: 'NUMERIC PROPERTY ID'
+                                        TextField, 0x1144f0dc0, {{86.8, 10805.7}, {103.0, 22.0}}, identifier: 'field.numeric-property-id', label: 'Numeric Property ID', placeholderValue: '123456789 (not G-XXXX)'
+                                        Button, 0x1144f0f00, {{209.3, 10784.8}, {109.7, 34.7}}, identifier: 'button.open-ga', label: 'Open GA'
+                                          Image, 0x1144f1040, {{227.2, 10797.3}, {10.0, 10.0}}, identifier: 'arrow.up.right', label: 'Up-Right Diagonal Arrow'
+                                          StaticText, 0x1144f1180, {{244.7, 10794.3}, {58.0, 15.7}}, label: 'Open GA'
+                                        Button, 0x1144f12c0, {{74.0, 10846.2}, {99.3, 50.3}}, identifier: 'button.oauth-setup', label: 'OAuth setup'
+                                          StaticText, 0x1144f1400, {{111.7, 10855.7}, {45.0, 31.3}}, label: 'OAuth setup'
+                                          Image, 0x1144f1540, {{91.8, 10865.0}, {13.0, 13.0}}, identifier: 'questionmark.circle', label: 'Question Mark In A Circle'
+                                        StaticText, 0x1144f1680, {{180.7, 10854.2}, {136.0, 34.3}}, label: 'Paste an analytics.readonly access token below to connect'
+                                        StaticText, 0x1144f17c0, {{74.7, 10905.0}, {244.0, 45.7}}, label: 'This build connects GA4 with an access token you paste below (scope https://www.googleapis.com/auth/analytics.readonly). Manual tokens are short-lived and do not renew themselves.'
+                                        Button, 0x1144f1900, {{74.5, 10959.7}, {244.3, 24.7}}, label: 'Advanced · short-lived access token'
+                                          StaticText, 0x1144f1a40, {{74.5, 10959.7}, {244.3, 24.7}}, label: 'Advanced · short-lived access token'
+                                          Image, 0x1144f1b80, {{309.5, 10965.0}, {8.7, 14.0}}, identifier: 'collapsed'
+                                        SegmentedControl, 0x1144f1cc0, {{74.5, 11045.3}, {81.0, 31.0}}
+                                          Button, 0x1144f1e00, {{74.7, 11045.3}, {27.0, 32.0}}, label: '7 days'
+                                          Button, 0x1144f1f40, {{101.7, 11045.3}, {27.0, 32.0}}, label: '30 days', Selected
+                                          Button, 0x1144f2080, {{128.7, 11045.3}, {27.0, 32.0}}, label: '90 days'
+                                        Button, 0x1144f21c0, {{163.0, 11020.2}, {75.0, 81.3}}, identifier: 'button.save-setup', label: 'Save setup', Selected
+                                          StaticText, 0x1144f2300, {{200.0, 11029.7}, {21.3, 62.3}}, label: 'Save setup'
+                                          Image, 0x1144f2440, {{181.2, 11055.3}, {11.7, 11.0}}, identifier: 'checkmark', label: 'Selected', Selected
+                                        Button, 0x1144f2580, {{245.1, 10992.9}, {74.1, 135.8}}, identifier: 'button.test---compare', label: 'Test & compare'
+                                          StaticText, 0x1144f26c0, {{283.0, 11004.3}, {17.7, 113.0}}, label: 'Test & compare'
+                                          Image, 0x1144f2800, {{264.5, 11054.0}, {11.7, 14.0}}, identifier: 'arrow.clockwise', label: 'Refresh'
+                                        Image, 0x1144f2940, {{75.5, 11178.7}, {14.0, 14.0}}, identifier: 'magnifyingglass.circle.fill', label: 'Search'
+                                        StaticText, 0x1144f2a80, {{98.7, 11162.3}, {56.3, 46.7}}, label: 'Google Search Console'
+                                        StaticText, 0x1144f2bc0, {{230.3, 11173.0}, {79.3, 25.3}}, label: 'Live · verified read'
+                                        StaticText, 0x1144f2d00, {{74.7, 11218.0}, {205.3, 37.7}}, label: 'Real organic search totals plus the top queries and pages, compared with the immediately preceding period.'
+                                        StaticText, 0x1144f2e40, {{74.7, 11264.7}, {217.0, 23.0}}, label: '1  Authorize Google   ·   2  choose an exact verified property   ·   3  test the live read'
+                                        StaticText, 0x1144f2f80, {{74.7, 11296.7}, {124.0, 24.0}}, label: 'EXACT SEARCH CONSOLE PROPERTY'
+                                        TextField, 0x1144f30c0, {{86.8, 11335.7}, {123.0, 22.0}}, identifier: 'field.exact-search-console-property', label: 'Exact Search Console property', placeholderValue: 'https://example.com/ or sc-domain:example.com'
+                                        Button, 0x1144f3200, {{229.3, 11307.2}, {90.0, 50.3}}, identifier: 'button.open-gsc', label: 'Open GSC'
+                                          StaticText, 0x1144f3340, {{264.3, 11316.5}, {38.3, 31.3}}, label: 'Open GSC'
+                                          Image, 0x1144f3480, {{247.2, 11327.3}, {10.0, 10.0}}, identifier: 'arrow.up.right', label: 'Up-Right Diagonal Arrow'
+                                        Button, 0x1144f35c0, {{74.0, 11376.2}, {117.3, 65.7}}, identifier: 'button.find-my-properties', label: 'Find my properties', Disabled
+                                          StaticText, 0x1144f3700, {{112.7, 11385.7}, {62.0, 46.7}}, label: 'Find my properties', Disabled
+                                          Image, 0x1144f3840, {{92.2, 11404.0}, {13.3, 10.3}}, identifier: 'list.bullet', label: 'List', Disabled
+                                        StaticText, 0x1144f3980, {{198.7, 11391.8}, {103.7, 34.3}}, label: 'Reconnect Google to add Search Console read-only'
+                                        SegmentedControl, 0x1144f3ac0, {{74.5, 11502.3}, {81.0, 31.0}}
+                                          Button, 0x1144f3c00, {{74.7, 11502.3}, {27.0, 32.0}}, label: '7 days'
+                                          Button, 0x1144f3d40, {{101.7, 11502.3}, {27.0, 32.0}}, label: '30 days', Selected
+                                          Button, 0x1144f3e80, {{128.7, 11502.3}, {27.0, 32.0}}, label: '90 days'
+                                        Button, 0x1144f8000, {{163.0, 11477.2}, {75.0, 81.3}}, identifier: 'button.save-setup', label: 'Save setup', Selected
+                                          StaticText, 0x1144f8140, {{200.0, 11486.7}, {21.3, 62.3}}, label: 'Save setup'
+                                          Image, 0x1144f8280, {{181.2, 11512.3}, {11.7, 11.0}}, identifier: 'checkmark', label: 'Selected', Selected
+                                        Button, 0x1144f83c0, {{245.1, 11449.9}, {74.1, 135.8}}, identifier: 'button.test---compare', label: 'Test & compare'
+                                          StaticText, 0x1144f8500, {{283.0, 11461.3}, {17.7, 113.0}}, label: 'Test & compare'
+                                          Image, 0x1144f8640, {{264.5, 11511.0}, {11.7, 14.0}}, identifier: 'arrow.clockwise', label: 'Refresh'
+                                        Image, 0x1144f8780, {{75.5, 11621.7}, {14.0, 14.0}}, identifier: 'g.circle.fill', label: 'Letter G In A Filled Circle'
+                                        StaticText, 0x1144f88c0, {{98.7, 11620.8}, {78.0, 15.7}}, label: 'Google Ads'
+                                        StaticText, 0x1144f8a00, {{226.3, 11622.3}, {83.3, 12.7}}, label: 'Not connected'
+                                        TextField, 0x1144f8b40, {{86.8, 11673.0}, {56.7, 22.0}}, identifier: 'field.', placeholderValue: 'Customer ID (123-456-7890)'
+                                        Button, 0x1144f8c80, {{163.0, 11649.5}, {70.7, 50.3}}, identifier: 'button.save', label: 'Save', Selected
+                                          StaticText, 0x1144f8dc0, {{200.0, 11658.8}, {17.0, 31.3}}, label: 'Save'
+                                          Image, 0x1144f8f00, {{181.2, 11669.0}, {11.7, 11.0}}, identifier: 'checkmark', label: 'Selected', Selected
+                                        Button, 0x1144f9040, {{240.7, 11649.5}, {78.7, 50.3}}, identifier: 'button.open', label: 'Open'
+                                          StaticText, 0x1144f9180, {{275.7, 11658.8}, {27.0, 31.3}}, label: 'Open'
+                                          Image, 0x1144f92c0, {{258.5, 11669.7}, {10.0, 10.0}}, identifier: 'arrow.up.right', label: 'Up-Right Diagonal Arrow'
+                                        StaticText, 0x1144f9400, {{74.7, 11711.0}, {216.0, 24.0}}, label: 'Save your own Google Ads account ID. API execution is not wired yet.'
+                                        Image, 0x1144f9540, {{75.5, 11771.3}, {14.0, 14.0}}, identifier: 'f.circle.fill', label: 'Letter F In A Filled Circle'
+                                        StaticText, 0x1144f9680, {{98.7, 11770.5}, {64.0, 15.7}}, label: 'Meta Ads'
+                                        StaticText, 0x1144f97c0, {{226.3, 11772.0}, {83.3, 12.7}}, label: 'Not connected'
+                                        TextField, 0x1144f9900, {{86.8, 11822.7}, {56.7, 22.0}}, identifier: 'field.', placeholderValue: 'Ad account ID (act_XXXX)'
+                                        Button, 0x1144f9a40, {{163.0, 11799.2}, {70.7, 50.3}}, identifier: 'button.save', label: 'Save', Selected
+                                          StaticText, 0x1144f9b80, {{200.0, 11808.5}, {17.0, 31.3}}, label: 'Save'
+                                          Image, 0x1144f9cc0, {{181.2, 11818.7}, {11.7, 11.0}}, identifier: 'checkmark', label: 'Selected', Selected
+                                        Button, 0x1144f9e00, {{240.7, 11799.2}, {78.7, 50.3}}, identifier: 'button.open', label: 'Open'
+                                          StaticText, 0x1144f9f40, {{275.7, 11808.5}, {27.0, 31.3}}, label: 'Open'
+                                          Image, 0x1144fa080, {{258.5, 11819.3}, {10.0, 10.0}}, identifier: 'arrow.up.right', label: 'Up-Right Diagonal Arrow'
+                                        StaticText, 0x1144fa1c0, {{74.7, 11860.7}, {205.3, 24.0}}, label: 'Save your own Meta Ads account ID. API execution is not wired yet.'
+                                        StaticText, 0x1144fa300, {{63.7, 11907.7}, {250.7, 48.0}}, label: 'Own-it: these are YOUR accounts. We never fabricate spend, clicks, or conversions — the dashboard shows only data you've logged or that syncs from a source you connect.'
+                                        Image, 0x1144fa440, {{53.2, 12035.3}, {13.0, 13.0}}, identifier: 'person.crop.circle.fill', label: 'Account'
+                                        StaticText, 0x1144fa580, {{83.7, 12028.3}, {196.0, 26.7}}, label: 'App account & sign-in'
+                                        StaticText, 0x1144fa6c0, {{80.3, 12069.7}, {38.3, 15.7}}, label: 'demo'
+                                        Image, 0x1144fa800, {{46.8, 12079.7}, {22.0, 22.0}}, identifier: 'checkmark.seal.fill', label: 'Verified', Selected
+                                        StaticText, 0x1144fa940, {{80.3, 12086.3}, {228.0, 25.3}}, label: 'Email, guest, and Apple sign-in work out of the box.'
+                                        Image, 0x1144faa80, {{59.2, 12153.7}, {19.7, 19.7}}, identifier: 'g.circle.fill', label: 'Letter G In A Filled Circle'
+                                        StaticText, 0x1144fabc0, {{88.7, 12155.3}, {103.3, 16.3}}, label: 'Google sign-in'
+                                        StaticText, 0x1144fad00, {{243.3, 12157.2}, {83.3, 12.7}}, label: 'Not connected'
+                                        StaticText, 0x1144fae40, {{57.7, 12185.0}, {273.7, 50.3}}, label: 'Optional. Sign in with your Google account for one-tap access instead of a password. Email, guest, and Apple sign-in already work out of the box — you don't need this unless you want to use Google.'
+                                        Button, 0x1144faf80, {{57.1, 12244.9}, {194.1, 39.1}}, identifier: 'button.sign-in-with-google', label: 'Sign in with Google'
+                                          Image, 0x1144fb0c0, {{73.5, 12257.3}, {16.7, 14.3}}, identifier: 'person.crop.circle.badge.checkmark', label: 'Person Cropped In A Circle With A Checkmark Badge'
+                                          StaticText, 0x1144fb200, {{97.3, 12256.3}, {135.7, 16.3}}, label: 'Sign in with Google'
+                                        Button, 0x1144fb340, {{57.5, 12293.7}, {278.3, 35.7}}, label: 'Advanced — set up your own Google client ID'
+                                          StaticText, 0x1144fb480, {{57.5, 12293.7}, {278.3, 35.7}}, label: 'Advanced — set up your own Google client ID'
+                                          Image, 0x1144fb5c0, {{326.5, 12304.7}, {8.7, 14.0}}, identifier: 'collapsed'
+                                        StaticText, 0x1144fb700, {{45.7, 12355.3}, {302.0, 37.7}}, label: 'Sign in with Apple shows on the sign-in screen and activates for real in the signed (provisioned) build of this app.'
+                                        Other, 0x1144fb840, {{0.0, 0.0}, {0.0, 0.0}}
+                                      Other, 0x1144fb980, {{360.7, 113.0}, {30.0, 656.0}}, label: 'Vertical scroll bar, 19 pages', value: 0%
+                                        Other, 0x1144fbac0, {{387.7, 116.0}, {3.0, 44.3}}
+                                      Other, 0x1144fbc00, {{360.7, 113.0}, {30.0, 656.0}}, label: 'Vertical scroll bar, 19 pages', value: 0%
+                                        Other, 0x1144fbd40, {{387.7, 116.0}, {3.0, 44.3}}
+                                    StaticText, 0x1144fbe80, {{125.7, 119.0}, {104.7, 65.7}}, label: '· Sample data — nothing here is real, and no email or post is actually sent.'
+                                    Button, 0x114504000, {{264.8, 127.5}, {113.0, 48.7}}, label: 'Connect your own & go live'
+                                      StaticText, 0x114504140, {{297.3, 132.0}, {68.0, 39.7}}, label: 'Connect your own & go live'
+                                      Image, 0x114504280, {{278.3, 146.0}, {12.0, 12.0}}, identifier: 'arrow.up.forward.circle.fill', label: 'Up-Forward Arrow In A Filled Circle'
+                                    Image, 0x1145043c0, {{17.0, 145.3}, {11.0, 13.0}}, identifier: 'sparkles', label: 'Sparkle'
+                                    StaticText, 0x114504500, {{37.0, 145.5}, {80.7, 12.7}}, label: 'DEMO MODE'
+                            Toolbar, 0x114504640, {{0.0, 0.0}, {393.0, 852.0}}, identifier: 'Toolbar', label: 'Toolbar'
+                              Other, 0x114504780, {{0.0, 0.0}, {393.0, 852.0}}
+                Other, 0x1145048c0, {{0.0, 0.0}, {393.0, 852.0}}
+                  Other, 0x114504a00, {{0.0, 769.0}, {393.0, 83.0}}
+                    Other, 0x114504b40, {{0.0, 0.0}, {393.0, 852.0}}
+                      TabBar, 0x114504c80, {{0.0, 769.0}, {393.0, 83.0}}, label: 'Tab Bar'
+                        Other, 0x114504dc0, {{21.0, 769.0}, {351.0, 62.0}}
+                          Other, 0x114504f00, {{21.0, 769.0}, {82.4, 54.0}}
+                          Other, 0x114505040, {{21.0, 769.0}, {351.0, 62.0}}
+                            Button, 0x114505180, {{25.0, 773.0}, {82.4, 54.0}}, identifier: 'chart.pie.fill', label: 'Home'
+                              Image, 0x1145052c0, {{52.3, 779.3}, {28.0, 27.7}}, identifier: 'chart.pie.fill', label: 'chart pie'
+                            Button, 0x114505400, {{87.4, 773.0}, {82.4, 54.0}}, identifier: 'wand.and.stars', label: 'Create'
+                              Image, 0x114505540, {{114.0, 778.3}, {29.0, 27.7}}, identifier: 'wand.and.sparkles', label: 'Magic wand with sparkles'
+                            Button, 0x114505680, {{149.7, 773.0}, {93.5, 54.0}}, identifier: 'megaphone.fill', label: 'Distribute'
+                              Image, 0x1145057c0, {{180.4, 778.3}, {32.3, 29.0}}, identifier: 'megaphone.fill', label: 'Megaphone, filled'
+                            Button, 0x114505900, {{223.3, 773.0}, {82.4, 54.0}}, identifier: 'chart.line.uptrend.xyaxis', label: 'Grow'
+                              Image, 0x114505a40, {{248.9, 779.7}, {31.3, 26.3}}, identifier: 'chart.line.uptrend.xyaxis', label: 'chart line'
+                            Button, 0x114505b80, {{285.6, 773.0}, {82.4, 54.0}}, identifier: 'ellipsis.circle.fill', label: 'More', Selected
+                              Image, 0x114505cc0, {{313.0, 778.7}, {28.0, 28.0}}, identifier: 'ellipsis.circle.fill', label: 'More'
+                          Other, 0x114505e00, {{21.0, 769.0}, {351.0, 62.0}}
+                          Other, 0x114505f40, {{285.6, 773.0}, {82.4, 54.0}}
+                            Other, 0x114506080, {{285.6, 773.0}, {82.3, 54.0}}
+                              Other, 0x1145061c0, {{285.6, 773.0}, {82.3, 54.0}}
+                              Other, 0x114506300, {{285.6, 773.0}, {82.3, 54.0}}
+                                Other, 0x114506440, {{285.6, 773.0}, {82.3, 54.0}}
+                                  Other, 0x114506580, {{285.6, 773.0}, {82.3, 54.0}}
+                                    Other, 0x1145066c0, {{285.6, 773.0}, {82.3, 54.0}}
+                                  Other, 0x114506800, {{285.6, 773.0}, {82.3, 54.0}}
+                                Other, 0x114506940, {{285.6, 773.0}, {82.3, 54.0}}
+                    Other, 0x114506a80, {{0.0, 769.0}, {393.0, 83.0}}
+                      Other, 0x114506bc0, {{0.0, 769.0}, {393.0, 83.0}}
+                        Other, 0x114506d00, {{0.0, 769.0}, {393.0, 83.0}}
+                          Other, 0x114506e40, {{0.0, 769.0}, {393.0, 83.0}}
+                            Other, 0x114506f80, {{0.0, 769.0}, {393.0, 83.0}}
+                              Other, 0x1145070c0, {{0.0, 769.0}, {393.0, 83.0}}
+                          Other, 0x114507200, {{0.0, 769.0}, {393.0, 83.0}}
+                            Other, 0x114507340, {{0.0, 769.0}, {393.0, 83.0}}
+Path to element:
+ →Application, 0x11446d400, pid: 12921, label: 'Black Label Marketing'
+Query chain:
+ →Find: Application 'com.blacklabel.marketing'
+  Output: {
+    Application, 0x114507480, pid: 12921, label: 'Black Label Marketing'
+  }
+
+MARKETING_PHYSICAL_CONNECTORS_OK
+    t =    16.17s Tear Down
+Test Case '-[PhoneAcceptance.PhoneAcceptance testMarketingPhysicalConnectors]' passed (16.260 seconds).
+Test Suite 'PhoneAcceptance' passed at 2026-09-21 22:44:13.886.
+	 Executed 1 test, with 0 failures (0 unexpected) in 16.260 (16.261) seconds
+Test Suite 'PhoneAcceptance.xctest' passed at 2026-09-21 22:44:13.888.
+	 Executed 1 test, with 0 failures (0 unexpected) in 16.260 (16.263) seconds
+Test Suite 'Selected tests' passed at 2026-09-21 22:44:13.890.
+	 Executed 1 test, with 0 failures (0 unexpected) in 16.260 (16.265) seconds
+2026-09-21 22:44:14.266 xcodebuild[76167:20144699] [MT] IDETestOperationsObserverDebug: 18.607 elapsed -- Testing started completed.
+2026-09-21 22:44:14.266 xcodebuild[76167:20144699] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-09-21 22:44:14.266 xcodebuild[76167:20144699] [MT] IDETestOperationsObserverDebug: 18.607 sec, +18.607 sec -- end
+
+Test session results, code coverage, and logs:
+	/Users/michaelbarber/BlackLabel-Team/STATE/marketing-mobile-connectors-20260921/physical-connectors-r5.xcresult
+
+** TEST SUCCEEDED **
+
+Testing started

@@ -1,0 +1,11 @@
+{
+  "features": 82,
+  "counts": {
+    "NOT_TESTED": 52,
+    "PASS": 7,
+    "FAIL": 20,
+    "BLOCKED": 3
+  },
+  "updated": "2026-09-21T21:56:00-05:00",
+  "note": "Partial Mac-routed update from cycle-06 + sheet36 + marketing connectors-r5; 52 still NOT_TESTED; public free-sample claims FAIL on owner/dev installs"
+}
